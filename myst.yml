@@ -12,7 +12,7 @@ site:
   template: book-theme
   options:
     logo_text: Data Science Project
-    logo: _images/farhan.jpg
+    logo: _images/farhan.jpeg
   parts:
     footer: footer.md
 
