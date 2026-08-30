@@ -14,7 +14,7 @@ site:
     logo_text: Data Science Project
     logo: _images/farhan.jpeg
   parts:
-    footer: footer.md
+    footer: "By Muhammad Farhan"
 
   toc:
     - title: Home
