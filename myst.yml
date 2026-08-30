@@ -13,3 +13,12 @@ site:
   # options:
   #   favicon: favicon.ico
   #   logo: site_logo.png
+
+  toc:
+    - title: Home
+      file: intro
+    - title: Materials
+      children:
+        - file: 1/index
+        - file: 2/index
+        - file: 3/index

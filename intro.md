@@ -1,6 +1,8 @@
 # Profile
 
-**_______________________________________________________________________________________________________________________**
+<img src="_images/farhan.jpeg" style="float:right; width:150px; border-radius:50%; margin: 0 0 16px 16px;">
+
+**___**
 
 <table align="left">
     <tr>
@@ -35,12 +37,4 @@
     </tr>
 </table>
 
-<br clear="left"/>
-
-**_______________________________________________________________________________________________________________________**
-
-<!-- 
-## Materials and Assignments for the Data Science Project Course:
-
-```{tableofcontents} -->
-```
+<br clear="all"/>
