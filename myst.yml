@@ -10,15 +10,17 @@ project:
   # To autogenerate a Table of Contents, run "myst init --write-toc"
 site:
   template: book-theme
-  # options:
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
+  options:
+    logo_text: Data Science Project
+    logo: _images/farhan.jpg
+  parts:
+    footer: footer.md
 
   toc:
     - title: Home
       file: intro
     - title: Materials
       children:
-        - file: 1/index
+        - file: 1/Sialkot_Air_Quality_Analysis.ipynb
         - file: 2/index
         - file: 3/index
