@@ -39,3 +39,4 @@ title: Profile
 ## Materials and Assignments for the Data Science Project Course:
 
 - [Sialkot Air Quality Analysis](1/Sialkot_Air_Quality_Analysis.ipynb)
+- [Air Quality Data Integration in Sialkot using Aiven PostgreSQL, pgAdmin, and KNIME](2/index.md)

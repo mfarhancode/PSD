@@ -8,6 +8,7 @@ project:
     - title: Materials
       children:
         - file: 1/Sialkot_Air_Quality_Analysis.ipynb
+        - file: 2/index.md
 
 site:
   template: book-theme
