@@ -1,0 +1,30 @@
+{
+  "resolution_m": 20,
+  "classes": {
+    "built_up": {
+      "pixels": 15267690,
+      "area_km2": 6107.08,
+      "percent": 32.6
+    },
+    "farmland": {
+      "pixels": 2403408,
+      "area_km2": 961.36,
+      "percent": 5.13
+    },
+    "water": {
+      "pixels": 3935615,
+      "area_km2": 1574.25,
+      "percent": 8.4
+    },
+    "forest": {
+      "pixels": 23795459,
+      "area_km2": 9518.18,
+      "percent": 50.81
+    },
+    "mangrove": {
+      "pixels": 1430064,
+      "area_km2": 572.03,
+      "percent": 3.05
+    }
+  }
+}

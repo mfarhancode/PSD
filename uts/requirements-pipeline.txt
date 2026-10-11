@@ -1,0 +1,8 @@
+openeo
+geopandas
+shapely
+rasterio
+scikit-learn
+pandas
+numpy
+joblib

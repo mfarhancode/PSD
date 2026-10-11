@@ -1,0 +1,119 @@
+{
+  "accuracy": 0.9607745159275453,
+  "kappa": 0.9335802786881737,
+  "labels": [
+    "built_up",
+    "farmland",
+    "water",
+    "forest",
+    "mangrove"
+  ],
+  "confusion_matrix": [
+    [
+      451,
+      0,
+      0,
+      20,
+      0
+    ],
+    [
+      0,
+      27,
+      28,
+      0,
+      0
+    ],
+    [
+      4,
+      78,
+      2341,
+      17,
+      6
+    ],
+    [
+      64,
+      24,
+      41,
+      4357,
+      14
+    ],
+    [
+      0,
+      6,
+      11,
+      1,
+      515
+    ]
+  ],
+  "per_class": {
+    "built_up": {
+      "precision": 0.8689788053949904,
+      "recall": 0.9575371549893843,
+      "f1-score": 0.9111111111111111,
+      "support": 471.0
+    },
+    "farmland": {
+      "precision": 0.2,
+      "recall": 0.4909090909090909,
+      "f1-score": 0.28421052631578947,
+      "support": 55.0
+    },
+    "water": {
+      "precision": 0.9669558033870301,
+      "recall": 0.9570727718724448,
+      "f1-score": 0.9619889048695295,
+      "support": 2446.0
+    },
+    "forest": {
+      "precision": 0.991353811149033,
+      "recall": 0.9682222222222222,
+      "f1-score": 0.9796514896008994,
+      "support": 4500.0
+    },
+    "mangrove": {
+      "precision": 0.9626168224299065,
+      "recall": 0.9662288930581614,
+      "f1-score": 0.9644194756554307,
+      "support": 533.0
+    },
+    "accuracy": 0.9607745159275453,
+    "macro avg": {
+      "precision": 0.797981048472192,
+      "recall": 0.8679940266102607,
+      "f1-score": 0.820276301510552,
+      "support": 8005.0
+    },
+    "weighted avg": {
+      "precision": 0.9693478861900693,
+      "recall": 0.9607745159275453,
+      "f1-score": 0.9644293638126125,
+      "support": 8005.0
+    }
+  },
+  "n_polygons_train": 167,
+  "n_polygons_test": 70,
+  "n_pixels_train": 20271,
+  "n_pixels_test": 8005,
+  "polygons_per_class": {
+    "built_up": 48,
+    "farmland": 41,
+    "water": 48,
+    "forest": 50,
+    "mangrove": 50
+  },
+  "pixels_per_class": {
+    "forest": 14965,
+    "water": 7044,
+    "mangrove": 3658,
+    "built_up": 2171,
+    "farmland": 438
+  },
+  "feature_importance": {
+    "B04": 0.10252525799701741,
+    "B8A": 0.16605418820874623,
+    "B11": 0.2380163353944203,
+    "NDVI": 0.23932901373897872,
+    "NDMI": 0.25407520466083733
+  },
+  "period": "2025-01-01 to 2026-01-01"
+}
