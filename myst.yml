@@ -10,6 +10,7 @@ project:
         - file: 1/Sialkot_Air_Quality_Analysis.ipynb
         - file: 2/index.md
         - file: 3/Sawah_Classification_Sentinel2.ipynb
+        - file: uts/business_understanding.md
 
 site:
   template: book-theme
