@@ -2,29 +2,29 @@
   "resolution_m": 20,
   "classes": {
     "built_up": {
-      "pixels": 15267690,
-      "area_km2": 6107.08,
-      "percent": 32.6
+      "pixels": 11740868,
+      "area_km2": 4696.35,
+      "percent": 25.07
     },
     "farmland": {
-      "pixels": 2403408,
-      "area_km2": 961.36,
-      "percent": 5.13
+      "pixels": 1307375,
+      "area_km2": 522.95,
+      "percent": 2.79
     },
     "water": {
-      "pixels": 3935615,
-      "area_km2": 1574.25,
-      "percent": 8.4
+      "pixels": 4057641,
+      "area_km2": 1623.06,
+      "percent": 8.66
     },
     "forest": {
-      "pixels": 23795459,
-      "area_km2": 9518.18,
-      "percent": 50.81
+      "pixels": 28673422,
+      "area_km2": 11469.37,
+      "percent": 61.23
     },
     "mangrove": {
-      "pixels": 1430064,
-      "area_km2": 572.03,
-      "percent": 3.05
+      "pixels": 1052930,
+      "area_km2": 421.17,
+      "percent": 2.25
     }
   }
 }
