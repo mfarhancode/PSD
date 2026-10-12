@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:3000/sitemap_style.xsl" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://localhost:3000</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/sialkot-air-quality-analysis</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/index-1</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/sawah-classification-sentinel2</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/tugas-uts</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/business-understanding-uts</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/data-understanding-uts</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/data-preparation-uts</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/modeling-evaluation-uts</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/code-uts</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/deployment-guide</loc>
+  </url>
+</urlset>

@@ -1,0 +1,762 @@
+<!DOCTYPE html><html lang="en" class="" style="scroll-padding:60px"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="preload" as="image" href="/PSD/build/farhan-cfb24e0dd3092906d31b375f7480c587.jpeg"/><title>Code - Data Science Project</title><meta property="og:title" content="Code - Data Science Project"/><meta name="generator" content="mystmd"/><meta name="keywords" content=""/><link rel="icon" href="/PSD/favicon.ico"/><link rel="modulepreload" href="/PSD/build/entry.client-NNNALS5X.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-UBXX7P26.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-KB7LMXDF.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-RAQ24GF6.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-LS4ALTVG.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-7FWBVTMU.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-7YIJOVKB.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-MCEKF3CD.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-BVQ4IR5U.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-EVF4GZYD.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-6LPWM5X2.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-WNVPCTL5.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-IZ3HLG6T.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-TBCV2LPN.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-SWBLOF4V.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-J56WUMNK.js"/><link rel="modulepreload" href="/PSD/build/root-C5CK33H3.js"/><link rel="modulepreload" href="/PSD/build/_shared/chunk-WGW5MSUV.js"/><link rel="modulepreload" href="/PSD/build/routes/$-6ALOT4PW.js"/><link rel="stylesheet" href="/PSD/build/_assets/app-XNK7MHNS.css"/><link rel="stylesheet" href="/PSD/build/_assets/thebe-core-VKVHG5VY.css"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jupyter-matplotlib@0.11.3/css/mpl_widget.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous"/><link rel="stylesheet" href="/PSD/myst-theme.css"/><script>
+  const savedTheme = localStorage.getItem("myst:theme");
+  const theme = window.matchMedia("(prefers-color-scheme: light)").matches ? 'light' : 'dark';
+  const classes = document.documentElement.classList;
+  const hasAnyTheme = classes.contains('light') || classes.contains('dark');
+  if (!hasAnyTheme) classes.add(savedTheme ?? theme);
+</script><script>(function(){var p=window.location.pathname;if(p.endsWith('/index.html'))window.location.replace((p.slice(0,-10)||'/')+window.location.search+window.location.hash);})();</script></head><body class="m-0 bg-myst-bg"><div class="myst-skip-to-article fixed top-1 left-1 h-[0px] w-[0px] focus-within:z-40 focus-within:h-auto focus-within:w-auto bg-myst-bg overflow-hidden focus-within:p-2 focus-within:ring-1" aria-label="skip to content options"><a href="#skip-to-frontmatter" class="myst-skip-to-link block px-2 py-1 text-myst-text underline">Skip to article frontmatter</a><a href="#skip-to-article" class="myst-skip-to-link block px-2 py-1 text-myst-text underline">Skip to article content</a></div><dialog id="myst-no-css" style="position:fixed;left:0px;top:0px;width:100%;height:100vh;font-size:4rem;padding:1rem;color:black;background:white"><strong>Site not loading correctly?</strong><p>This may be due to an incorrect <code>BASE_URL</code> configuration. See<!-- --> <a href="https://mystmd.org/guide/deployment#deploy-base-url">the MyST Documentation</a> <!-- -->for reference.</p><script>
+    (() => {
+            // Test for has-styling variable set by the MyST stylesheet
+            const node = document.currentScript.parentNode;
+            const hasCSS = window.getComputedStyle(node).getPropertyValue("--has-styling");
+            if (hasCSS === ""){
+                    node.showModal();
+            }
+
+    })()
+</script></dialog><div class="myst-top-nav myst-bg-translucent backdrop-blur shadow dark:shadow-2xl p-3 md:px-8 sticky w-full top-0 z-30 min-h-[60px]"><nav class="myst-top-nav-bar flex items-center justify-between flex-nowrap max-w-[1440px] mx-auto"><div class="flex flex-row xl:min-w-[19.5rem] mr-2 sm:mr-7 justify-start items-center shrink-0"><div class="block xl:hidden"><button class="myst-top-nav-menu-button flex items-center justify-center border-myst-border-strong text-myst-text-secondary hover:text-myst-text w-10 h-10"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" width="1.5rem" height="1.5rem"><path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"></path></svg><span class="sr-only">Open Menu</span></button></div><a class="myst-home-link flex items-center ml-3 text-myst-text w-fit md:ml-5 xl:ml-7" href="/PSD/"><div class="myst-home-link-logo mr-3 flex items-center dark:rounded px-1"><img src="/PSD/build/farhan-cfb24e0dd3092906d31b375f7480c587.jpeg" class="h-9" alt="Data Science Project" height="2.25rem"/></div><span class="text-md sm:text-xl tracking-tight sm:mr-5">Data Science Project</span></a></div><div class="flex items-center flex-grow w-auto"><div class="flex-grow hidden text-md lg:block"></div><div class="flex-grow block"></div><button type="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" class="myst-search-bar flex items-center h-10 aspect-square sm:w-64 text-left text-myst-text-secondary border border-myst-border-strong rounded-lg bg-myst-bg-secondary dark:bg-myst-surface-hover myst-search-bar-disabled hover:ring-myst-focus-ring hover:border-myst-focus-ring"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="p-2.5 h-10 w-10 aspect-square"><path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" clip-rule="evenodd"></path></svg><span class="myst-search-text-placeholder hidden sm:block grow">Search</span><div aria-hidden="true" class="myst-search-shortcut items-center hidden mx-1 font-mono text-sm text-myst-text-secondary sm:flex gap-x-1"><kbd class="px-2 py-1 border border-myst-border-strong rounded-md shadow-[0px_2px_0px_0px_rgba(0,0,0,0.08)] dark:shadow-none hide-mac">CTRL</kbd><kbd class="px-2 py-1 border border-myst-border-strong rounded-md shadow-[0px_2px_0px_0px_rgba(0,0,0,0.08)] dark:shadow-none show-mac">⌘</kbd><kbd class="px-2 py-1 border border-myst-border-strong rounded-md shadow-[0px_2px_0px_0px_rgba(0,0,0,0.08)] dark:shadow-none ">K</kbd><script>
+;(() => {
+const script = document.currentScript;
+const root = script.parentElement;
+
+const isMac = /mac/i.test(
+      window.navigator.userAgentData?.platform ?? window.navigator.userAgent,
+    );
+root.querySelectorAll(".hide-mac").forEach(node => {node.classList.add(isMac ? "hidden" : "block")});
+root.querySelectorAll(".show-mac").forEach(node => {node.classList.add(!isMac ? "hidden" : "block")});
+})()</script></div></button><button class="myst-theme-button theme shrink-0 rounded-full border border-myst-border-strong hover:bg-myst-surface border-solid overflow-hidden text-myst-text-secondary w-8 h-8 ml-3" title="Toggle theme between light and dark mode" aria-label="Toggle theme between light and dark mode"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="myst-theme-moon-icon h-full w-full p-[18%] hidden dark:block"><path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clip-rule="evenodd"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="myst-theme-sun-icon h-full w-full p-[18%] dark:hidden"><path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"></path></svg></button><div class="block sm:hidden"></div><div class="hidden sm:block"></div></div></nav></div><div class="myst-primary-sidebar fixed xl:article-grid grid-gap xl:w-full xl:pointer-events-none overflow-auto max-xl:w-[75vw] max-xl:max-w-[350px] max-xl:!top-0 max-xl:h-screen hidden z-10" style="top:60px"><div class="myst-primary-sidebar-pointer pointer-events-auto xl:col-margin-left flex-col overflow-hidden max-xl:h-full hidden xl:flex"><div class="myst-primary-sidebar-nav flex-grow py-6 overflow-y-auto primary-scrollbar"><nav aria-label="Navigation" class="myst-primary-sidebar-topnav overflow-y-hidden transition-opacity lg:hidden ml-3 xl:ml-0 mr-3 max-w-[350px]"><div class="w-full px-1 text-myst-text font-medium"></div></nav><div class="my-3 border-b-2 lg:hidden"></div><nav aria-label="Table of Contents" class="myst-primary-sidebar-toc flex-grow overflow-y-hidden transition-opacity ml-3 xl:ml-0 mr-3 max-w-[350px]"><div class="myst-toc w-full px-1 text-myst-text"><a title="Data Science Project" class="block break-words focus:outline outline-myst-focus-outline outline-2 rounded myst-toc-item p-2 my-1 rounded-lg hover:bg-myst-surface font-bold" href="/PSD/">Data Science Project</a><div data-state="closed" class="w-full"><div class="myst-toc-item flex flex-row w-full gap-2 pl-2 my-1 text-left rounded-lg outline-none hover:bg-myst-surface"><div title="Materials" class="block break-words rounded py-2 grow cursor-pointer">Materials</div><button class="self-stretch flex items-center flex-none px-1 rounded-l-md group hover:bg-myst-surface focus-visible:outline outline-myst-focus-outline outline-2" aria-label="Open Folder" type="button" aria-controls="radix-_R_18psp_" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="transition-transform duration-300 group-data-[state=open]:rotate-90 text-myst-text-secondary" height="1.5rem" width="1.5rem"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path></svg></button></div><div data-state="closed" id="radix-_R_18psp_" hidden="" class="pl-3 pr-[2px] collapsible-content" style="animation:none"></div></div><div data-state="open" class="w-full"><div class="myst-toc-item flex flex-row w-full gap-2 pl-2 my-1 text-left rounded-lg outline-none hover:bg-myst-surface"><div title="UTS" class="block break-words rounded py-2 grow font-semibold text-myst-accent-text cursor-pointer">UTS</div><button class="self-stretch flex items-center flex-none px-1 rounded-l-md group hover:bg-myst-surface focus-visible:outline outline-myst-focus-outline outline-2" aria-label="Open Folder" type="button" aria-controls="radix-_R_1opsp_" aria-expanded="true" data-state="open"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon" class="transition-transform duration-300 group-data-[state=open]:rotate-90 text-myst-text-secondary" height="1.5rem" width="1.5rem"><path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd"></path></svg></button></div><div data-state="open" id="radix-_R_1opsp_" class="pl-3 pr-[2px] collapsible-content" style="animation:none"><a title="UTS Replacement Assignment: Land Cover Classification of East Java" class="block break-words focus:outline outline-myst-focus-outline outline-2 rounded myst-toc-item p-2 my-1 rounded-lg hover:bg-myst-surface" href="/PSD/tugas-uts">UTS Replacement Assignment: Land Cover Classification of East Java</a><a title="Business Understanding" class="block break-words focus:outline outline-myst-focus-outline outline-2 rounded myst-toc-item p-2 my-1 rounded-lg hover:bg-myst-surface" href="/PSD/business-understanding-uts">Business Understanding</a><a title="Data Understanding" class="block break-words focus:outline outline-myst-focus-outline outline-2 rounded myst-toc-item p-2 my-1 rounded-lg hover:bg-myst-surface" href="/PSD/data-understanding-uts">Data Understanding</a><a title="Data Preparation" class="block break-words focus:outline outline-myst-focus-outline outline-2 rounded myst-toc-item p-2 my-1 rounded-lg hover:bg-myst-surface" href="/PSD/data-preparation-uts">Data Preparation</a><a title="Modeling and Evaluation" class="block break-words focus:outline outline-myst-focus-outline outline-2 rounded myst-toc-item p-2 my-1 rounded-lg hover:bg-myst-surface" href="/PSD/modeling-evaluation-uts">Modeling and Evaluation</a><a title="Code" class="block break-words focus:outline outline-myst-focus-outline outline-2 rounded myst-toc-item p-2 my-1 rounded-lg myst-toc-item-exact bg-myst-active-bg" href="/PSD/code-uts">Code</a><a title="Deployment" class="block break-words focus:outline outline-myst-focus-outline outline-2 rounded myst-toc-item p-2 my-1 rounded-lg hover:bg-myst-surface" href="/PSD/deployment-guide">Deployment</a></div></div></div></nav></div><div class="myst-primary-sidebar-footer flex-none py-6 transition-all duration-700 translate-y-6 opacity-0 ml-3 xl:ml-0 mr-3 max-w-[350px]"><a class="myst-made-with-myst flex mx-auto text-myst-text-secondary w-fit hover:text-myst-link" href="https://mystmd.org/made-with-myst" target="_blank" rel="noreferrer"><svg style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" stroke="none"><g id="icon"><path fill="currentColor" d="M23.8,54.8v-3.6l4.7-0.8V17.5l-4.7-0.8V13H36l13.4,31.7h0.2l13-31.7h12.6v3.6l-4.7,0.8v32.9l4.7,0.8v3.6h-15
+          v-3.6l4.9-0.8V20.8H65L51.4,53.3h-3.8l-14-32.5h-0.1l0.2,17.4v12.1l5,0.8v3.6H23.8z"></path><path fill="#F37726" d="M47,86.9c0-5.9-3.4-8.8-10.1-8.8h-8.4c-5.2,0-9.4-1.3-12.5-3.8c-3.1-2.5-5.4-6.2-6.8-11l4.8-1.6
+          c1.8,5.6,6.4,8.6,13.8,8.8h9.2c6.4,0,10.8,2.5,13.1,7.5c2.3-5,6.7-7.5,13.1-7.5h8.4c7.8,0,12.7-2.9,14.6-8.7l4.8,1.6
+          c-1.4,4.9-3.6,8.6-6.8,11.1c-3.1,2.5-7.3,3.7-12.4,3.8H63c-6.7,0-10,2.9-10,8.8"></path></g></svg><span class="self-center ml-2 text-sm">Made with MyST</span></a></div></div></div><main class="article-grid grid-gap"><article class="article-grid subgrid-gap col-screen article content"><div class="hidden"></div><div id="skip-to-frontmatter" aria-label="article frontmatter" class="myst-fm-block mb-8 pt-9"><div class="myst-fm-block-header flex items-center mb-5 h-6 text-sm font-light"><div class="flex-grow"></div><div class="myst-fm-block-badges"></div><div class="myst-fm-downloads-dropdown relative flex inline-block mx-1 grow-0" data-headlessui-state=""><button class="myst-fm-downloads-button relative ml-2 -mr-1" id="headlessui-menu-button-_R_s8ucp_" type="button" aria-haspopup="menu" aria-expanded="false" data-headlessui-state=""><span class="sr-only">Downloads</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="1.25rem" height="1.25rem" class="myst-fm-downloads-icon stroke-myst-text-tertiary hover:stroke-myst-text"><title>Download</title><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg></button></div></div><h1 class="myst-fm-block-title mb-0">Code</h1></div><div class="block my-10 lg:sticky lg:z-10 lg:h-0 lg:pt-0 lg:my-0 lg:ml-10 lg:col-margin-right" style="top:60px"><nav></nav></div><div id="skip-to-article"></div><p>All code lives in this folder and is shown below directly from the files. Run order: 1 to 4, then the app.</p><h2 id="settings-config-py" class="relative group"><span class="heading-text">Settings: <code>config.py</code></span><a class="no-underline text-inherit hover:text-inherit inline-block w-0 px-0 translate-x-[10px] font-normal select-none transition-opacity opacity-0 focus:opacity-100 group-hover:opacity-70" href="#settings-config-py" title="Link to this Section" aria-label="Link to this Section">¶</a></h2><p>All paths, class names, colours, dates, bands and model settings.</p><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl bg-stone-200/10"><div class="flex flex-row pl-2 bg-myst-bg-secondary border-b border-myst-border"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="16px" height="16px" class="inline-block flex-none self-center text-myst-text-tertiary myst-code-filename-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path></svg><div class="self-center p-2 text-sm leading-3 myst-code-filename-title prose text-myst-text-secondary">config.py</div></div><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">&quot;&quot;&quot;Central settings for the East Java LULC project. Edit values here only.&quot;&quot;&quot;
+from pathlib import Path
+
+ROOT = Path(__file__).parent
+DATA = ROOT / &quot;data&quot;
+
+# ---- input files (put them in the data/ folder) ----------------------------
+SAMPLES_RAW = DATA / &quot;samples.geojson&quot;            # your digitized polygons (from geojson.io)
+BOUNDARY = DATA / &quot;east_java_boundary.geojson&quot;    # province boundary (from geoBoundaries)
+
+# ---- generated files --------------------------------------------------------
+SAMPLES_CLEAN = DATA / &quot;samples_clean.geojson&quot;    # step 1 output
+TEST_DIR = DATA / &quot;test&quot;                          # step 2 --test output
+TILES_DIR = DATA / &quot;tiles&quot;                        # step 2 output (Sentinel-2 composite tiles)
+PIXELS_CSV = DATA / &quot;training_pixels.csv&quot;         # step 3 output
+MODEL_PATH = DATA / &quot;model_rf.joblib&quot;             # step 3 output
+METRICS_JSON = DATA / &quot;metrics.json&quot;              # step 3 output
+SIGNATURE_CSV = DATA / &quot;class_signature.csv&quot;      # step 3 output (mean B04/B8A/B11 per class)
+CLASS_TILES_DIR = DATA / &quot;class_tiles&quot;            # step 4 output (classified GeoTIFF tiles)
+GEOJSON_DIR = DATA / &quot;geojson&quot;                    # step 4 output (one GeoJSON per class)
+STATS_JSON = DATA / &quot;class_stats.json&quot;            # step 4 output (area per class)
+
+# ---- classes ----------------------------------------------------------------
+CLASSES = [&quot;built_up&quot;, &quot;farmland&quot;, &quot;water&quot;, &quot;forest&quot;, &quot;mangrove&quot;]
+CLASS_ID = {name: i + 1 for i, name in enumerate(CLASSES)}       # 0 = no data
+CLASS_NAME_EN = {
+    &quot;built_up&quot;: &quot;Built-up (Bangunan)&quot;,
+    &quot;farmland&quot;: &quot;Farmland (Lahan pertanian)&quot;,
+    &quot;water&quot;: &quot;Water body (Lautan, danau, perairan)&quot;,
+    &quot;forest&quot;: &quot;Forest (Hutan)&quot;,
+    &quot;mangrove&quot;: &quot;Mangrove forest (Hutan mangrove)&quot;,
+}
+CLASS_COLOR = {
+    &quot;built_up&quot;: &quot;#e31a1c&quot;,
+    &quot;farmland&quot;: &quot;#ffd92f&quot;,
+    &quot;water&quot;: &quot;#1f78b4&quot;,
+    &quot;forest&quot;: &quot;#1b7837&quot;,
+    &quot;mangrove&quot;: &quot;#7b3294&quot;,
+}
+# Accepted spellings in your geojson -&gt; official class value.
+# Step 1 reads column &quot;kelas&quot; if it exists, otherwise column &quot;Type&quot;.
+LABEL_MAP = {
+    &quot;built_up&quot;: &quot;built_up&quot;, &quot;built-up&quot;: &quot;built_up&quot;, &quot;bangunan&quot;: &quot;built_up&quot;, &quot;pemukiman&quot;: &quot;built_up&quot;,
+    &quot;farmland&quot;: &quot;farmland&quot;, &quot;sawah&quot;: &quot;farmland&quot;, &quot;pertanian&quot;: &quot;farmland&quot;,
+    &quot;water&quot;: &quot;water&quot;, &quot;air&quot;: &quot;water&quot;,
+    &quot;forest&quot;: &quot;forest&quot;, &quot;hutan&quot;: &quot;forest&quot;, &quot;hutan non mangrove&quot;: &quot;forest&quot;,
+    &quot;mangrove&quot;: &quot;mangrove&quot;, &quot;hutan mangrove&quot;: &quot;mangrove&quot;,
+}
+
+# ---- Sentinel-2 download (openEO / Copernicus Data Space) -------------------
+DATE_START = &quot;2025-01-01&quot;
+DATE_END = &quot;2026-01-01&quot;        # end date is exclusive -&gt; all of 2025
+MAX_CLOUD = 60                 # % scene cloud cover accepted before pixel-level masking
+BANDS = [&quot;B04&quot;, &quot;B8A&quot;, &quot;B11&quot;]  # lecturer&#x27;s note: bands 8A-11-4 (order in the GeoTIFF)
+EPSG = 32749                   # UTM 49S, used for every tile so that tiles line up
+CRS = f&quot;EPSG:{EPSG}&quot;
+RESOLUTION = 20                # metres (B8A and B11 are natively 20 m)
+TILE_SIZE_M = 50_000           # 50 km x 50 km tiles = 2500 x 2500 pixels
+
+# Far offshore islands (Kangean, Masalembu, Bawean ...) would add many tiles that are
+# mostly sea. Set to False if you want them included.
+EXCLUDE_FAR_ISLANDS = True
+MAX_LON = 114.7
+MAX_LAT = -6.4
+BOUNDARY_BUFFER_M = 0          # &gt;0 adds a coastal sea strip around the province
+
+# ---- sampling and model -----------------------------------------------------
+MIN_POLYGON_AREA_M2 = 500    # polygons smaller than this are dropped (step 1)
+WARN_POLYGON_AREA_M2 = 5_000_000   # polygons larger than this are flagged (mixed land cover risk)
+MAX_PIXELS_PER_POLYGON = 300   # random cap so very large polygons do not dominate
+TEST_SIZE = 0.30               # share of POLYGONS (not pixels) kept for testing
+SEED = 42
+FEATURES = [&quot;B04&quot;, &quot;B8A&quot;, &quot;B11&quot;, &quot;NDVI&quot;, &quot;NDMI&quot;]
+RF_PARAMS = dict(n_estimators=300, class_weight=&quot;balanced&quot;, n_jobs=-1, random_state=SEED)
+
+# ---- GeoJSON layers for the web map ------------------------------------------
+VECTOR_FACTOR = 3              # 3 -&gt; vectorize at 60 m (smaller files). 1 = full 20 m
+SIEVE_MIN_PIXELS = 10          # remove blobs smaller than this many (coarse) pixels
+MIN_AREA_HA = 3                # drop polygons smaller than this
+SIMPLIFY_M = 40                # geometry simplification tolerance in metres
+</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-myst-link-underline hover:text-myst-link-hover absolute right-1 myst-code-copy-icon top-[32px]" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><h2 id="step-1-prepare-samples-01-prepare-samples-py" class="relative group"><span class="heading-text">Step 1: prepare samples (<code>01_prepare_samples.py</code>)</span><a class="no-underline text-inherit hover:text-inherit inline-block w-0 px-0 translate-x-[10px] font-normal select-none transition-opacity opacity-0 focus:opacity-100 group-hover:opacity-70" href="#step-1-prepare-samples-01-prepare-samples-py" title="Link to this Section" aria-label="Link to this Section">¶</a></h2><p>Maps labels to the five class names, fixes invalid geometries, drops polygons that are too small.</p><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl bg-stone-200/10"><div class="flex flex-row pl-2 bg-myst-bg-secondary border-b border-myst-border"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="16px" height="16px" class="inline-block flex-none self-center text-myst-text-tertiary myst-code-filename-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path></svg><div class="self-center p-2 text-sm leading-3 myst-code-filename-title prose text-myst-text-secondary">01_prepare_samples.py</div></div><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">&quot;&quot;&quot;Step 1 - check and clean your digitized polygons.
+
+Reads data/samples.geojson, converts the label column to `kelas` with the five official
+values (built_up, farmland, water, forest, mangrove), drops polygons that are too small
+to contain pixels, and writes data/samples_clean.geojson.
+&quot;&quot;&quot;
+import sys
+
+import geopandas as gpd
+
+import config as C
+
+
+def main():
+    if not C.SAMPLES_RAW.exists():
+        sys.exit(f&quot;Put your polygon file at {C.SAMPLES_RAW}&quot;)
+
+    gdf = gpd.read_file(C.SAMPLES_RAW)
+    print(f&quot;Read {len(gdf)} features, geometry types: {sorted(gdf.geom_type.unique())}&quot;)
+    gdf = gdf[gdf.geom_type.isin([&quot;Polygon&quot;, &quot;MultiPolygon&quot;])].copy()
+
+    label_col = &quot;kelas&quot; if &quot;kelas&quot; in gdf.columns else &quot;Type&quot; if &quot;Type&quot; in gdf.columns else None
+    if label_col is None:
+        sys.exit(f&quot;No &#x27;kelas&#x27; or &#x27;Type&#x27; column found. Columns: {list(gdf.columns)}&quot;)
+    print(f&quot;Label column used: {label_col}&quot;)
+
+    raw = gdf[label_col].astype(str).str.strip().str.lower()
+    unknown = sorted(set(raw) - set(C.LABEL_MAP))
+    if unknown:
+        sys.exit(f&quot;Unknown label values {unknown}. Add them to LABEL_MAP in config.py or fix the file.&quot;)
+    gdf[&quot;kelas&quot;] = raw.map(C.LABEL_MAP)
+
+    gdf = gdf[gdf.geometry.notna() &amp; ~gdf.geometry.is_empty].copy()
+    invalid = ~gdf.geometry.is_valid
+    if invalid.any():
+        print(f&quot;Fixing {int(invalid.sum())} invalid geometries&quot;)
+        gdf.loc[invalid, &quot;geometry&quot;] = gdf.loc[invalid, &quot;geometry&quot;].buffer(0)
+
+    gdf[&quot;area_m2&quot;] = gdf.to_crs(C.CRS).geometry.area.round(0)
+    too_small = gdf[&quot;area_m2&quot;] &lt; C.MIN_POLYGON_AREA_M2
+    too_large = gdf[&quot;area_m2&quot;] &gt; C.WARN_POLYGON_AREA_M2
+    print(f&quot;Dropping {int(too_small.sum())} polygons smaller than {C.MIN_POLYGON_AREA_M2} m2&quot;)
+    print(f&quot;WARNING: {int(too_large.sum())} polygons larger than {C.WARN_POLYGON_AREA_M2 / 1e6:.0f} km2 &quot;
+          f&quot;(kept, but they may cover mixed land cover - consider redrawing)&quot;)
+    gdf = gdf[~too_small].copy()
+
+    gdf[&quot;class_id&quot;] = gdf[&quot;kelas&quot;].map(C.CLASS_ID)
+    gdf = gdf.sort_values(&quot;kelas&quot;).reset_index(drop=True)
+    gdf[&quot;poly_id&quot;] = gdf.groupby(&quot;kelas&quot;).cumcount().add(1).map(&quot;{:03d}&quot;.format)
+    gdf[&quot;poly_id&quot;] = gdf[&quot;kelas&quot;] + &quot;_&quot; + gdf[&quot;poly_id&quot;]
+
+    out = gdf[[&quot;poly_id&quot;, &quot;kelas&quot;, &quot;class_id&quot;, &quot;area_m2&quot;, &quot;geometry&quot;]].to_crs(4326)
+    C.DATA.mkdir(exist_ok=True)
+    out.to_file(C.SAMPLES_CLEAN, driver=&quot;GeoJSON&quot;)
+
+    print(&quot;\nPolygons per class:&quot;)
+    print(out.groupby(&quot;kelas&quot;).agg(polygons=(&quot;poly_id&quot;, &quot;count&quot;),
+                                   median_area_m2=(&quot;area_m2&quot;, &quot;median&quot;),
+                                   max_area_m2=(&quot;area_m2&quot;, &quot;max&quot;)).reindex(C.CLASSES))
+    print(f&quot;\nSaved {len(out)} polygons -&gt; {C.SAMPLES_CLEAN}&quot;)
+
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-myst-link-underline hover:text-myst-link-hover absolute right-1 myst-code-copy-icon top-[32px]" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><h2 id="step-2-download-sentinel-2-02-download-sentinel2-py" class="relative group"><span class="heading-text">Step 2: download Sentinel-2 (<code>02_download_sentinel2.py</code>)</span><a class="no-underline text-inherit hover:text-inherit inline-block w-0 px-0 translate-x-[10px] font-normal select-none transition-opacity opacity-0 focus:opacity-100 group-hover:opacity-70" href="#step-2-download-sentinel-2-02-download-sentinel2-py" title="Link to this Section" aria-label="Link to this Section">¶</a></h2><p>Cloud-masked median composite of bands B04, B8A, B11 for 2025, downloaded tile by tile from Copernicus openEO.</p><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl bg-stone-200/10"><div class="flex flex-row pl-2 bg-myst-bg-secondary border-b border-myst-border"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="16px" height="16px" class="inline-block flex-none self-center text-myst-text-tertiary myst-code-filename-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path></svg><div class="self-center p-2 text-sm leading-3 myst-code-filename-title prose text-myst-text-secondary">02_download_sentinel2.py</div></div><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">&quot;&quot;&quot;Step 2 - download a Sentinel-2 L2A composite (bands B04, B8A, B11) from Copernicus openEO.
+
+  python 02_download_sentinel2.py --test      small 10x10 km test around your first farmland polygon
+  python 02_download_sentinel2.py --dry-run   list the tiles that would be downloaded, then stop
+  python 02_download_sentinel2.py --samples-only   only tiles that contain your polygons (enough for training)
+  python 02_download_sentinel2.py             download all tiles (resumes: existing files are skipped)
+
+For every tile the server: filters Sentinel-2 L2A for 2025, masks cloud / cloud shadow / cirrus /
+snow with the SCL band, takes the per-pixel median over time, and returns a 3-band GeoTIFF
+(B04, B8A, B11) at 20 m in EPSG:32749.
+A browser window opens the first time so you can log in to your Copernicus account.
+&quot;&quot;&quot;
+import argparse
+import sys
+import time
+
+import geopandas as gpd
+import openeo
+from shapely.geometry import box
+
+import config as C
+from geo_utils import load_boundary_utm
+from lulc_utils import tile_grid
+
+
+def build_cube(conn, west, south, east, north):
+    cube = conn.load_collection(
+        &quot;SENTINEL2_L2A&quot;,
+        spatial_extent={&quot;west&quot;: west, &quot;south&quot;: south, &quot;east&quot;: east, &quot;north&quot;: north, &quot;crs&quot;: C.CRS},
+        temporal_extent=[C.DATE_START, C.DATE_END],
+        bands=C.BANDS + [&quot;SCL&quot;],
+        max_cloud_cover=C.MAX_CLOUD,
+    )
+    scl = cube.band(&quot;SCL&quot;)
+    # SCL classes: 3 cloud shadow, 8 cloud medium, 9 cloud high, 10 thin cirrus, 11 snow/ice
+    bad = (scl == 3) | (scl == 8) | (scl == 9) | (scl == 10) | (scl == 11)
+    cube = cube.filter_bands(C.BANDS).mask(bad)
+    cube = cube.reduce_dimension(dimension=&quot;t&quot;, reducer=&quot;median&quot;)
+    cube = cube.resample_spatial(resolution=C.RESOLUTION, projection=C.EPSG)
+    return cube
+
+
+def run_job(conn, extent, out_path, title):
+    west, south, east, north = extent
+    cube = build_cube(conn, west, south, east, north)
+    job = cube.create_job(title=title, out_format=&quot;GTiff&quot;)
+    job.start_and_wait()
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    job.get_results().download_file(out_path)
+
+
+def test_extent():
+    gdf = gpd.read_file(C.SAMPLES_CLEAN).to_crs(C.CRS)
+    farm = gdf[gdf[&quot;kelas&quot;] == &quot;farmland&quot;]
+    if farm.empty:
+        sys.exit(&quot;No farmland polygon found in samples_clean.geojson (run step 1 first).&quot;)
+    c = farm.iloc[0].geometry.centroid
+    half = 5000
+    snap = lambda v: round(v / C.RESOLUTION) * C.RESOLUTION
+    return snap(c.x - half), snap(c.y - half), snap(c.x + half), snap(c.y + half)
+
+
+def all_tiles(samples_only=False):
+    boundary = load_boundary_utm()
+    minx, miny, maxx, maxy = boundary.bounds
+    polys = gpd.read_file(C.SAMPLES_CLEAN).to_crs(C.CRS) if samples_only else None
+    tiles = []
+    for name, x0, y0, x1, y1 in tile_grid(minx, miny, maxx, maxy, C.TILE_SIZE_M):
+        b = box(x0, y0, x1, y1)
+        if not b.intersects(boundary):
+            continue
+        if samples_only and not polys.intersects(b).any():
+            continue
+        tiles.append((name, (x0, y0, x1, y1)))
+    return tiles
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument(&quot;--test&quot;, action=&quot;store_true&quot;)
+    ap.add_argument(&quot;--dry-run&quot;, action=&quot;store_true&quot;)
+    ap.add_argument(&quot;--samples-only&quot;, action=&quot;store_true&quot;,
+                    help=&quot;only tiles that contain sample polygons&quot;)
+    args = ap.parse_args()
+
+    if args.test:
+        extent = test_extent()
+        print(&quot;Test extent (UTM 49S, metres):&quot;, extent)
+        conn = openeo.connect(&quot;openeo.dataspace.copernicus.eu&quot;).authenticate_oidc()
+        out = C.TEST_DIR / &quot;test_area.tif&quot;
+        t0 = time.time()
+        run_job(conn, extent, out, &quot;uts-test-area&quot;)
+        print(f&quot;Saved {out} in {time.time() - t0:.0f} s. Now open it and check it has 3 bands.&quot;)
+        print(&quot;Check your credit usage in the Copernicus dashboard before running the full download.&quot;)
+        return
+
+    tiles = all_tiles(args.samples_only)
+    print(f&quot;{len(tiles)} tiles of {C.TILE_SIZE_M // 1000} km x {C.TILE_SIZE_M // 1000} km&quot;)
+    if args.dry_run:
+        for name, ext in tiles:
+            print(&quot; &quot;, name, ext)
+        return
+
+    conn = openeo.connect(&quot;openeo.dataspace.copernicus.eu&quot;).authenticate_oidc()
+    failed = []
+    for i, (name, (x0, y0, x1, y1)) in enumerate(tiles, 1):
+        out = C.TILES_DIR / f&quot;{name}.tif&quot;
+        if out.exists():
+            print(f&quot;[{i}/{len(tiles)}] {name}: already downloaded, skipping&quot;)
+            continue
+        print(f&quot;[{i}/{len(tiles)}] {name}: requesting ...&quot;)
+        try:
+            t0 = time.time()
+            run_job(conn, (x0, y0, x1, y1), out, f&quot;uts-{name}&quot;)
+            print(f&quot;    done in {time.time() - t0:.0f} s&quot;)
+        except Exception as e:  # keep going; rerun the script to retry failed tiles
+            print(f&quot;    FAILED: {e}&quot;)
+            failed.append(name)
+    if failed:
+        print(&quot;\nFailed tiles (rerun this script to retry):&quot;, failed)
+    else:
+        print(&quot;\nAll tiles downloaded.&quot;)
+
+
+if __name__ == &quot;__main__&quot;:
+    main()</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-myst-link-underline hover:text-myst-link-hover absolute right-1 myst-code-copy-icon top-[32px]" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><h2 id="step-3-extract-pixels-train-evaluate-03-extract-and-train-py" class="relative group"><span class="heading-text">Step 3: extract pixels, train, evaluate (<code>03_extract_and_train.py</code>)</span><a class="no-underline text-inherit hover:text-inherit inline-block w-0 px-0 translate-x-[10px] font-normal select-none transition-opacity opacity-0 focus:opacity-100 group-hover:opacity-70" href="#step-3-extract-pixels-train-evaluate-03-extract-and-train-py" title="Link to this Section" aria-label="Link to this Section">¶</a></h2><p>Reads pixel values under the polygons, trains the Random Forest, evaluates on test polygons.</p><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl bg-stone-200/10"><div class="flex flex-row pl-2 bg-myst-bg-secondary border-b border-myst-border"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="16px" height="16px" class="inline-block flex-none self-center text-myst-text-tertiary myst-code-filename-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path></svg><div class="self-center p-2 text-sm leading-3 myst-code-filename-title prose text-myst-text-secondary">03_extract_and_train.py</div></div><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">&quot;&quot;&quot;Step 3 - read pixel values under your polygons, train the classifier, evaluate it.
+
+Model: Random Forest on B04, B8A, B11 (+ NDVI and NDMI computed from them).
+The train/test split is made by POLYGON, so pixels of one polygon never appear in both sets.
+&quot;&quot;&quot;
+import json
+import sys
+
+import geopandas as gpd
+import joblib
+import numpy as np
+import pandas as pd
+import rasterio
+from rasterio.mask import mask as rio_mask
+from shapely.geometry import box, mapping
+from sklearn.ensemble import RandomForestClassifier
+
+import config as C
+from lulc_utils import evaluate, make_features, split_polygons, valid_pixels
+
+
+def extract_pixels():
+    tiles = sorted(C.TILES_DIR.glob(&quot;*.tif&quot;))
+    if not tiles:
+        sys.exit(f&quot;No tiles in {C.TILES_DIR}. Run step 2 first.&quot;)
+    polys = gpd.read_file(C.SAMPLES_CLEAN).to_crs(C.CRS)
+    rng = np.random.default_rng(C.SEED)
+    rows = []
+    for tif in tiles:
+        with rasterio.open(tif) as src:
+            if src.count &lt; 3:
+                sys.exit(f&quot;{tif.name} has {src.count} bands, expected 3 (B04, B8A, B11).&quot;)
+            hit = polys[polys.intersects(box(*src.bounds))]
+            for _, p in hit.iterrows():
+                try:
+                    arr, _ = rio_mask(src, [mapping(p.geometry)], crop=True, filled=False)
+                except ValueError:      # polygon does not overlap this raster
+                    continue
+                bands = arr[:3].reshape(3, -1)
+                inside = ~np.ma.getmaskarray(bands).any(axis=0)
+                vals = np.ma.getdata(bands).astype(&quot;float32&quot;)
+                if src.nodata is not None and not np.isnan(src.nodata):
+                    inside &amp;= ~np.any(vals == src.nodata, axis=0)
+                ok = inside &amp; valid_pixels(vals)
+                idx = np.flatnonzero(ok)
+                if len(idx) == 0:
+                    continue
+                if len(idx) &gt; C.MAX_PIXELS_PER_POLYGON:
+                    idx = rng.choice(idx, C.MAX_PIXELS_PER_POLYGON, replace=False)
+                df = make_features(vals[0, idx], vals[1, idx], vals[2, idx])
+                df.insert(0, &quot;kelas&quot;, p[&quot;kelas&quot;])
+                df.insert(0, &quot;poly_id&quot;, p[&quot;poly_id&quot;])
+                rows.append(df)
+    if not rows:
+        sys.exit(&quot;No pixels extracted: polygons do not overlap the downloaded tiles.&quot;)
+    return pd.concat(rows, ignore_index=True)
+
+
+def main():
+    pix = extract_pixels()
+    pix.to_csv(C.PIXELS_CSV, index=False)
+    used = pix.groupby(&quot;kelas&quot;)[&quot;poly_id&quot;].nunique().reindex(C.CLASSES).fillna(0).astype(int)
+    print(&quot;Polygons with usable pixels per class:\n&quot;, used.to_string())
+    print(&quot;Pixels per class:\n&quot;, pix[&quot;kelas&quot;].value_counts().reindex(C.CLASSES).fillna(0).astype(int).to_string())
+
+    poly_df = pix[[&quot;poly_id&quot;, &quot;kelas&quot;]].drop_duplicates()
+    train_ids, test_ids = split_polygons(poly_df, C.TEST_SIZE, C.SEED)
+    tr = pix[pix[&quot;poly_id&quot;].isin(train_ids)]
+    te = pix[pix[&quot;poly_id&quot;].isin(test_ids)]
+    print(f&quot;\nTrain: {len(train_ids)} polygons / {len(tr)} pixels   Test: {len(test_ids)} polygons / {len(te)} pixels&quot;)
+
+    model = RandomForestClassifier(**C.RF_PARAMS)
+    model.fit(tr[C.FEATURES], tr[&quot;kelas&quot;])
+    pred = model.predict(te[C.FEATURES])
+
+    present = [c for c in C.CLASSES if c in set(te[&quot;kelas&quot;]) | set(pred)]
+    res = evaluate(te[&quot;kelas&quot;], pred, present)
+    res[&quot;n_polygons_train&quot;] = len(train_ids)
+    res[&quot;n_polygons_test&quot;] = len(test_ids)
+    res[&quot;n_pixels_train&quot;] = int(len(tr))
+    res[&quot;n_pixels_test&quot;] = int(len(te))
+    res[&quot;polygons_per_class&quot;] = {k: int(v) for k, v in used.items()}
+    res[&quot;pixels_per_class&quot;] = {k: int(v) for k, v in pix[&quot;kelas&quot;].value_counts().items()}
+    res[&quot;feature_importance&quot;] = dict(zip(C.FEATURES, map(float, model.feature_importances_)))
+    res[&quot;period&quot;] = f&quot;{C.DATE_START} to {C.DATE_END}&quot;
+
+    print(f&quot;\nOverall accuracy: {res[&#x27;accuracy&#x27;]:.4f}   Cohen&#x27;s kappa: {res[&#x27;kappa&#x27;]:.4f}&quot;)
+    print(&quot;\nPer-class F1 (lowest first - these classes need more / better polygons):&quot;)
+    f1 = {c: res[&quot;per_class&quot;][c][&quot;f1-score&quot;] for c in present}
+    for c, v in sorted(f1.items(), key=lambda kv: kv[1]):
+        print(f&quot;  {c:10s} {v:.3f}&quot;)
+    print(&quot;\nConfusion matrix (rows = true, columns = predicted):&quot;)
+    print(pd.DataFrame(res[&quot;confusion_matrix&quot;], index=present, columns=present).to_string())
+
+    sig = pix.groupby(&quot;kelas&quot;)[[&quot;B04&quot;, &quot;B8A&quot;, &quot;B11&quot;]].mean().reindex(C.CLASSES).dropna()
+    sig.to_csv(C.SIGNATURE_CSV)
+    joblib.dump({&quot;model&quot;: model, &quot;features&quot;: C.FEATURES}, C.MODEL_PATH)
+    with open(C.METRICS_JSON, &quot;w&quot;) as f:
+        json.dump(res, f, indent=2)
+    print(f&quot;\nSaved {C.MODEL_PATH.name}, {C.METRICS_JSON.name}, {C.SIGNATURE_CSV.name}, {C.PIXELS_CSV.name} in data/&quot;)
+
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-myst-link-underline hover:text-myst-link-hover absolute right-1 myst-code-copy-icon top-[32px]" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><h2 id="step-4-predict-and-create-geojson-layers-04-predict-and-vectorize-py" class="relative group"><span class="heading-text">Step 4: predict and create GeoJSON layers (<code>04_predict_and_vectorize.py</code>)</span><a class="no-underline text-inherit hover:text-inherit inline-block w-0 px-0 translate-x-[10px] font-normal select-none transition-opacity opacity-0 focus:opacity-100 group-hover:opacity-70" href="#step-4-predict-and-create-geojson-layers-04-predict-and-vectorize-py" title="Link to this Section" aria-label="Link to this Section">¶</a></h2><p>Classifies every tile and converts each class into a GeoJSON layer.</p><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl bg-stone-200/10"><div class="flex flex-row pl-2 bg-myst-bg-secondary border-b border-myst-border"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="16px" height="16px" class="inline-block flex-none self-center text-myst-text-tertiary myst-code-filename-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path></svg><div class="self-center p-2 text-sm leading-3 myst-code-filename-title prose text-myst-text-secondary">04_predict_and_vectorize.py</div></div><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">&quot;&quot;&quot;Step 4 - classify every tile, then digitize the result into one GeoJSON layer per class.
+
+For each Sentinel-2 tile: predict a class map (GeoTIFF, 1-5, 0 = no data / outside East Java),
+count the area per class, and convert each class to polygons (GeoJSON, EPSG:4326) for the web map.
+Polygons are generalized (coarser grid, small blobs removed, simplified) so the files stay small
+enough for Leaflet - see VECTOR_FACTOR, SIEVE_MIN_PIXELS, MIN_AREA_HA and SIMPLIFY_M in config.py.
+&quot;&quot;&quot;
+import json
+import sys
+
+import geopandas as gpd
+import joblib
+import numpy as np
+import rasterio
+from rasterio.features import geometry_mask, shapes, sieve
+from shapely.geometry import box, shape
+
+import config as C
+from geo_utils import load_boundary_utm
+from lulc_utils import make_features, valid_pixels
+
+
+def predict_tile(model, features, src, boundary):
+    data = src.read([1, 2, 3]).astype(&quot;float32&quot;)             # (3, h, w)
+    h, w = data.shape[1:]
+    flat = data.reshape(3, -1)
+    ok = valid_pixels(flat)
+    inside = geometry_mask([boundary], out_shape=(h, w), transform=src.transform, invert=True).ravel()
+    ok &amp;= inside
+    out = np.zeros(h * w, dtype=&quot;uint8&quot;)
+    idx = np.flatnonzero(ok)
+    for start in range(0, len(idx), 500_000):                # predict in chunks to save memory
+        sl = idx[start:start + 500_000]
+        X = make_features(flat[0, sl], flat[1, sl], flat[2, sl])[features]
+        out[sl] = [C.CLASS_ID[k] for k in model.predict(X)]
+    return out.reshape(h, w)
+
+
+def class_polygons(class_map, transform, class_id):
+    &quot;&quot;&quot;Binary class layer -&gt; list of shapely polygons in the raster CRS (metres).&quot;&quot;&quot;
+    f = C.VECTOR_FACTOR
+    h, w = class_map.shape
+    hh, ww = h // f * f, w // f * f
+    binary = (class_map[:hh, :ww] == class_id).astype(&quot;uint8&quot;)
+    if f &gt; 1:                                                # majority vote per f x f block
+        blocks = binary.reshape(hh // f, f, ww // f, f).sum(axis=(1, 3), dtype=&quot;uint8&quot;)
+        binary = (blocks * 2 &gt;= f * f).astype(&quot;uint8&quot;)
+    t = transform * transform.scale(f, f)
+    if not binary.any():
+        return []
+    binary = sieve(binary, size=C.SIEVE_MIN_PIXELS, connectivity=4)
+    polys = []
+    min_area = C.MIN_AREA_HA * 10_000
+    for geom, val in shapes(binary, mask=binary.astype(bool), transform=t, connectivity=4):
+        g = shape(geom)
+        if g.area &lt; min_area:
+            continue
+        polys.append(g.simplify(C.SIMPLIFY_M, preserve_topology=True))
+    return polys
+
+
+def round_coords(obj, nd=5):
+    if isinstance(obj, (list, tuple)):
+        if obj and isinstance(obj[0], (int, float)):
+            return [round(v, nd) for v in obj]
+        return [round_coords(o, nd) for o in obj]
+    return obj
+
+
+def main():
+    tiles = sorted(C.TILES_DIR.glob(&quot;*.tif&quot;))
+    if not tiles:
+        sys.exit(f&quot;No tiles in {C.TILES_DIR}. Run step 2 first.&quot;)
+    bundle = joblib.load(C.MODEL_PATH)
+    model, features = bundle[&quot;model&quot;], bundle[&quot;features&quot;]
+    boundary = load_boundary_utm()
+
+    C.CLASS_TILES_DIR.mkdir(parents=True, exist_ok=True)
+    C.GEOJSON_DIR.mkdir(parents=True, exist_ok=True)
+    pixel_counts = {k: 0 for k in C.CLASSES}
+    layer_polys = {k: [] for k in C.CLASSES}
+    res = C.RESOLUTION
+
+    for i, tif in enumerate(tiles, 1):
+        print(f&quot;[{i}/{len(tiles)}] {tif.name}&quot;)
+        with rasterio.open(tif) as src:
+            if not box(*src.bounds).intersects(boundary):
+                continue
+            cmap = predict_tile(model, features, src, boundary)
+            profile = src.profile.copy()
+            profile.update(count=1, dtype=&quot;uint8&quot;, nodata=0, compress=&quot;lzw&quot;)
+            with rasterio.open(C.CLASS_TILES_DIR / f&quot;{tif.stem}_class.tif&quot;, &quot;w&quot;, **profile) as dst:
+                dst.write(cmap, 1)
+            for k in C.CLASSES:
+                cid = C.CLASS_ID[k]
+                pixel_counts[k] += int((cmap == cid).sum())
+                layer_polys[k] += class_polygons(cmap, src.transform, cid)
+
+    total = sum(pixel_counts.values())
+    stats = {k: {&quot;pixels&quot;: v,
+                 &quot;area_km2&quot;: round(v * res * res / 1e6, 2),
+                 &quot;percent&quot;: round(100 * v / total, 2) if total else 0.0}
+             for k, v in pixel_counts.items()}
+    with open(C.STATS_JSON, &quot;w&quot;) as f:
+        json.dump({&quot;resolution_m&quot;: res, &quot;classes&quot;: stats}, f, indent=2)
+
+    for k in C.CLASSES:
+        gdf = gpd.GeoDataFrame({&quot;kelas&quot;: k, &quot;area_ha&quot;: [round(g.area / 1e4, 2) for g in layer_polys[k]]},
+                               geometry=layer_polys[k], crs=C.CRS).to_crs(4326)
+        gj = json.loads(gdf.to_json(drop_id=True))
+        for feat in gj[&quot;features&quot;]:
+            feat[&quot;geometry&quot;][&quot;coordinates&quot;] = round_coords(feat[&quot;geometry&quot;][&quot;coordinates&quot;])
+        path = C.GEOJSON_DIR / f&quot;{k}.geojson&quot;
+        with open(path, &quot;w&quot;) as f:
+            json.dump(gj, f, separators=(&quot;,&quot;, &quot;:&quot;))
+        print(f&quot;  {k:9s} {len(gdf):7d} polygons  {path.stat().st_size / 1e6:7.1f} MB&quot;)
+    print(&quot;\nArea per class:&quot;)
+    for k, v in stats.items():
+        print(f&quot;  {k:9s} {v[&#x27;area_km2&#x27;]:10.1f} km2  {v[&#x27;percent&#x27;]:5.1f} %&quot;)
+    print(f&quot;\nSaved class tiles in {C.CLASS_TILES_DIR} and GeoJSON layers in {C.GEOJSON_DIR}&quot;)
+
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-myst-link-underline hover:text-myst-link-hover absolute right-1 myst-code-copy-icon top-[32px]" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><h2 id="helper-modules" class="relative group"><span class="heading-text">Helper modules</span><a class="no-underline text-inherit hover:text-inherit inline-block w-0 px-0 translate-x-[10px] font-normal select-none transition-opacity opacity-0 focus:opacity-100 group-hover:opacity-70" href="#helper-modules" title="Link to this Section" aria-label="Link to this Section">¶</a></h2><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl bg-stone-200/10"><div class="flex flex-row pl-2 bg-myst-bg-secondary border-b border-myst-border"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="16px" height="16px" class="inline-block flex-none self-center text-myst-text-tertiary myst-code-filename-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path></svg><div class="self-center p-2 text-sm leading-3 myst-code-filename-title prose text-myst-text-secondary">lulc_utils.py</div></div><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">&quot;&quot;&quot;Helpers that need only numpy / pandas / scikit-learn (no GIS libraries).&quot;&quot;&quot;
+import math
+
+import numpy as np
+import pandas as pd
+
+import config as C
+
+
+def make_features(b04, b8a, b11):
+    &quot;&quot;&quot;Build the model feature table from three 1-D arrays of reflectance values.&quot;&quot;&quot;
+    b04 = np.asarray(b04, dtype=&quot;float32&quot;)
+    b8a = np.asarray(b8a, dtype=&quot;float32&quot;)
+    b11 = np.asarray(b11, dtype=&quot;float32&quot;)
+    eps = 1e-6
+    df = pd.DataFrame({
+        &quot;B04&quot;: b04,
+        &quot;B8A&quot;: b8a,
+        &quot;B11&quot;: b11,
+        &quot;NDVI&quot;: (b8a - b04) / (b8a + b04 + eps),   # vegetation
+        &quot;NDMI&quot;: (b8a - b11) / (b8a + b11 + eps),   # moisture (NIR vs SWIR)
+    })
+    return df[C.FEATURES]
+
+
+def valid_pixels(bands):
+    &quot;&quot;&quot;bands: array (3, n). True where the pixel holds usable values.&quot;&quot;&quot;
+    ok = np.all(np.isfinite(bands), axis=0)
+    ok &amp;= np.any(bands != 0, axis=0)
+    return ok
+
+
+def split_polygons(poly_df, test_size, seed):
+    &quot;&quot;&quot;Stratified split by polygon. poly_df needs columns poly_id and kelas.&quot;&quot;&quot;
+    rng = np.random.default_rng(seed)
+    train, test = [], []
+    for _, g in poly_df.groupby(&quot;kelas&quot;):
+        ids = g[&quot;poly_id&quot;].to_numpy().copy()
+        rng.shuffle(ids)
+        n_test = max(1, int(round(len(ids) * test_size))) if len(ids) &gt; 1 else 0
+        test += list(ids[:n_test])
+        train += list(ids[n_test:])
+    return set(train), set(test)
+
+
+def tile_grid(minx, miny, maxx, maxy, size):
+    &quot;&quot;&quot;Yield (name, x0, y0, x1, y1) for a grid aligned to multiples of `size`.&quot;&quot;&quot;
+    x_start = math.floor(minx / size) * size
+    y_start = math.floor(miny / size) * size
+    x = x_start
+    while x &lt; maxx:
+        y = y_start
+        while y &lt; maxy:
+            yield f&quot;tile_{int(x // 1000)}_{int(y // 1000)}&quot;, x, y, x + size, y + size
+            y += size
+        x += size
+
+
+def evaluate(y_true, y_pred, labels):
+    from sklearn.metrics import (accuracy_score, classification_report,
+                                 cohen_kappa_score, confusion_matrix)
+    return {
+        &quot;accuracy&quot;: float(accuracy_score(y_true, y_pred)),
+        &quot;kappa&quot;: float(cohen_kappa_score(y_true, y_pred)),
+        &quot;labels&quot;: list(labels),
+        &quot;confusion_matrix&quot;: confusion_matrix(y_true, y_pred, labels=labels).tolist(),
+        &quot;per_class&quot;: classification_report(y_true, y_pred, labels=labels,
+                                           output_dict=True, zero_division=0),
+    }
+</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-myst-link-underline hover:text-myst-link-hover absolute right-1 myst-code-copy-icon top-[32px]" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl bg-stone-200/10"><div class="flex flex-row pl-2 bg-myst-bg-secondary border-b border-myst-border"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="16px" height="16px" class="inline-block flex-none self-center text-myst-text-tertiary myst-code-filename-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path></svg><div class="self-center p-2 text-sm leading-3 myst-code-filename-title prose text-myst-text-secondary">geo_utils.py</div></div><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">&quot;&quot;&quot;Helpers that need geopandas / shapely.&quot;&quot;&quot;
+import geopandas as gpd
+from shapely.ops import unary_union
+
+import config as C
+
+
+def load_boundary_utm():
+    &quot;&quot;&quot;East Java boundary in EPSG:32749 as one shapely geometry (far islands removed if configured).&quot;&quot;&quot;
+    gdf = gpd.read_file(C.BOUNDARY)
+    geom = unary_union(list(gdf.to_crs(C.CRS).geometry))
+    parts = list(geom.geoms) if geom.geom_type == &quot;MultiPolygon&quot; else [geom]
+    if C.EXCLUDE_FAR_ISLANDS:
+        kept = []
+        for p in parts:
+            c = gpd.GeoSeries([p], crs=C.CRS).to_crs(4326).iloc[0].centroid
+            if c.x &gt; C.MAX_LON or c.y &gt; C.MAX_LAT:
+                continue
+            kept.append(p)
+        parts = kept
+    geom = unary_union(parts)
+    if C.BOUNDARY_BUFFER_M:
+        geom = geom.buffer(C.BOUNDARY_BUFFER_M)
+    return geom
+</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-myst-link-underline hover:text-myst-link-hover absolute right-1 myst-code-copy-icon top-[32px]" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><h2 id="streamlit-app-app-py" class="relative group"><span class="heading-text">Streamlit app: <code>app.py</code></span><a class="no-underline text-inherit hover:text-inherit inline-block w-0 px-0 translate-x-[10px] font-normal select-none transition-opacity opacity-0 focus:opacity-100 group-hover:opacity-70" href="#streamlit-app-app-py" title="Link to this Section" aria-label="Link to this Section">¶</a></h2><p>Business Understanding, workflow, Leaflet map with one checkbox per class, and information about areas and accuracy.</p><div class="relative myst-code group not-prose my-5 text-sm shadow hover:shadow-md dark:shadow-2xl bg-stone-200/10"><div class="flex flex-row pl-2 bg-myst-bg-secondary border-b border-myst-border"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="16px" height="16px" class="inline-block flex-none self-center text-myst-text-tertiary myst-code-filename-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path></svg><div class="self-center p-2 text-sm leading-3 myst-code-filename-title prose text-myst-text-secondary">app.py</div></div><div aria-label="code block content" class="block overflow-auto p-3 myst-code-body hljs"><pre style="background-color:#fff;padding:0;margin:0;background:transparent"><code class="language-python" style="white-space:pre">&quot;&quot;&quot;Streamlit app: land cover of East Java (Sentinel-2 + Random Forest), Leaflet map with class filter.&quot;&quot;&quot;
+import json
+
+import folium
+import pandas as pd
+import streamlit as st
+from streamlit_folium import st_folium
+
+import config as C
+
+ESRI = &quot;https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}&quot;
+ESRI_ATTR = &quot;Tiles &amp;copy; Esri &amp;mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community&quot;
+
+st.set_page_config(page_title=&quot;East Java Land Cover&quot;, layout=&quot;wide&quot;)
+
+
+@st.cache_data
+def load_json(path):
+    p = C.ROOT / path
+    return json.loads(p.read_text(encoding=&quot;utf-8&quot;)) if p.exists() else None
+
+
+def load_layer(k):
+    return load_json(f&quot;data/geojson/{k}.geojson&quot;)
+
+
+st.title(&quot;Land cover map of East Java from Sentinel-2 imagery&quot;)
+tab_bu, tab_flow, tab_map, tab_info = st.tabs(
+    [&quot;Business Understanding&quot;, &quot;Workflow&quot;, &quot;Map&quot;, &quot;Information&quot;])
+
+# ------------------------------------------------------------------ Business understanding
+with tab_bu:
+    bu = C.ROOT / &quot;business_understanding.md&quot;
+    st.markdown(bu.read_text(encoding=&quot;utf-8&quot;) if bu.exists() else &quot;business_understanding.md not found&quot;)
+
+# ------------------------------------------------------------------ Workflow
+with tab_flow:
+    metrics = load_json(&quot;data/metrics.json&quot;)
+    period = metrics[&quot;period&quot;] if metrics else f&quot;{C.DATE_START} to {C.DATE_END}&quot;
+    st.markdown(f&quot;&quot;&quot;
+**Take input &amp;rarr; Process &amp;rarr; Classify &amp;rarr; Get information**
+
+1. **Input**
+   - Sentinel-2 L2A satellite imagery from Copernicus Data Space (openEO), period {period}.
+   - Sample polygons digitized by hand in geojson.io for five classes: built-up, farmland, water body, forest, mangrove forest.
+2. **Process**
+   - Clouds, cloud shadow, cirrus and snow are masked with the SCL band, then a median composite is made.
+   - Bands **8A, 11 and 4** (NIR, SWIR, red) are used; NDVI and NDMI are computed from the same bands.
+   - Pixel values under each sample polygon become the training data.
+3. **Classify**
+   - A Random Forest is trained on 70 % of the polygons and tested on the other 30 %.
+   - The trained model classifies every pixel of East Java, and the result is converted to one GeoJSON layer per class.
+4. **Get information**
+   - *Map* tab: class layers on top of the satellite basemap, with a checkbox per class.
+   - *Information* tab: area of each class and the model&#x27;s accuracy.
+&quot;&quot;&quot;)
+
+# ------------------------------------------------------------------ Map
+with tab_map:
+    left, right = st.columns([1, 4])
+    with left:
+        st.subheader(&quot;Classes&quot;)
+
+        def set_all(value):
+            for k in C.CLASSES:
+                st.session_state[f&quot;show_{k}&quot;] = value
+
+        b1, b2 = st.columns(2)
+        b1.button(&quot;Show all&quot;, on_click=set_all, args=(True,), use_container_width=True)
+        b2.button(&quot;Hide all&quot;, on_click=set_all, args=(False,), use_container_width=True)
+        selected = []
+        for k in C.CLASSES:
+            if st.checkbox(C.CLASS_NAME_EN[k], value=True, key=f&quot;show_{k}&quot;):
+                selected.append(k)
+            st.markdown(
+                f&quot;&lt;div style=&#x27;height:6px;width:100%;background:{C.CLASS_COLOR[k]};&quot;
+                f&quot;margin:-10px 0 8px 0;border-radius:3px&#x27;&gt;&lt;/div&gt;&quot;, unsafe_allow_html=True)
+        opacity = st.slider(&quot;Layer opacity&quot;, 0.1, 1.0, 0.6, 0.05)
+        st.caption(&quot;Only the ticked classes are drawn on the map.&quot;)
+
+    with right:
+        m = folium.Map(location=[-7.75, 112.6], zoom_start=8, tiles=None, control_scale=True)
+        folium.TileLayer(tiles=ESRI, attr=ESRI_ATTR, name=&quot;Satellite (Esri World Imagery)&quot;).add_to(m)
+        missing = []
+        for k in selected:
+            data = load_layer(k)
+            if data is None:
+                missing.append(k)
+                continue
+            color = C.CLASS_COLOR[k]
+            folium.GeoJson(
+                data,
+                name=C.CLASS_NAME_EN[k],
+                style_function=lambda _f, col=color, op=opacity: {
+                    &quot;fillColor&quot;: col, &quot;color&quot;: col, &quot;weight&quot;: 0.3, &quot;fillOpacity&quot;: op},
+            ).add_to(m)
+        if missing:
+            st.warning(f&quot;No GeoJSON yet for: {&#x27;, &#x27;.join(missing)}. Run 04_predict_and_vectorize.py first.&quot;)
+        st_folium(m, height=680, use_container_width=True, returned_objects=[])
+
+# ------------------------------------------------------------------ Information
+with tab_info:
+    stats = load_json(&quot;data/class_stats.json&quot;)
+    metrics = load_json(&quot;data/metrics.json&quot;)
+    if stats is None or metrics is None:
+        st.info(&quot;Run steps 3 and 4 to fill this page.&quot;)
+    else:
+        st.subheader(&quot;Area per class&quot;)
+        df = pd.DataFrame(stats[&quot;classes&quot;]).T
+        df.index = [C.CLASS_NAME_EN[k] for k in df.index]
+        st.dataframe(df[[&quot;area_km2&quot;, &quot;percent&quot;]].rename(
+            columns={&quot;area_km2&quot;: &quot;Area (km2)&quot;, &quot;percent&quot;: &quot;Share (%)&quot;}), use_container_width=True)
+        st.bar_chart(df[&quot;area_km2&quot;])
+        st.caption(f&quot;Counted from the classified raster at {stats[&#x27;resolution_m&#x27;]} m resolution, &quot;
+                   &quot;inside the East Java boundary used for the download.&quot;)
+
+        st.subheader(&quot;Model accuracy (test polygons not used for training)&quot;)
+        c1, c2, c3 = st.columns(3)
+        c1.metric(&quot;Overall accuracy&quot;, f&quot;{metrics[&#x27;accuracy&#x27;] * 100:.1f} %&quot;)
+        c2.metric(&quot;Cohen&#x27;s kappa&quot;, f&quot;{metrics[&#x27;kappa&#x27;]:.3f}&quot;)
+        c3.metric(&quot;Test pixels&quot;, f&quot;{metrics[&#x27;n_pixels_test&#x27;]:,}&quot;)
+        labels = metrics[&quot;labels&quot;]
+        per = pd.DataFrame({k: metrics[&quot;per_class&quot;][k] for k in labels}).T[
+            [&quot;precision&quot;, &quot;recall&quot;, &quot;f1-score&quot;, &quot;support&quot;]].round(3)
+        st.dataframe(per, use_container_width=True)
+        st.markdown(&quot;**Confusion matrix** (rows = true class, columns = predicted class)&quot;)
+        st.dataframe(pd.DataFrame(metrics[&quot;confusion_matrix&quot;], index=labels, columns=labels),
+                     use_container_width=True)
+        st.markdown(f&quot;Training data: {metrics[&#x27;polygons_per_class&#x27;]} polygons per class; &quot;
+                    f&quot;{metrics[&#x27;n_pixels_train&#x27;]:,} training pixels.&quot;)
+
+        sig_path = C.ROOT / &quot;data&quot; / &quot;class_signature.csv&quot;
+        if sig_path.exists():
+            st.subheader(&quot;Mean reflectance of the training pixels (bands 8A, 11, 4)&quot;)
+            sig = pd.read_csv(sig_path, index_col=0)[[&quot;B8A&quot;, &quot;B11&quot;, &quot;B04&quot;]]
+            st.line_chart(sig.T)
+            st.caption(&quot;Each line is one class. Bands are in the order 8A, 11, 4 as in the assignment.&quot;)
+</code></pre></div><button title="Copy to Clipboard" class="inline-flex items-center opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 active:opacity-100 cursor-pointer ml-2 transition-color duration-200 ease-in-out text-myst-link-underline hover:text-myst-link-hover absolute right-1 myst-code-copy-icon top-[32px]" aria-pressed="false" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"></path></svg></button></div><div class="myst-backmatter-parts"></div><div class="myst-footer-links flex pt-10 mb-10 space-x-4"><a class="myst-footer-link flex-1 block p-4 font-normal text-myst-text-secondary no-underline border border-myst-border rounded shadow-sm group hover:border-myst-active hover:text-myst-active hover:shadow-lg myst-footer-link-prev" aria-label="Previous: Modeling and Evaluation" href="/PSD/modeling-evaluation-uts"><div class="flex h-full align-middle"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="1.5rem" height="1.5rem" class="myst-footer-link-icon self-center transition-transform group-hover:-translate-x-1 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"></path></svg><div class="flex-grow text-right"><div class="myst-footer-link-group text-xs text-myst-text-tertiary">UTS</div>Modeling and Evaluation</div></div></a><a class="myst-footer-link flex-1 block p-4 font-normal text-myst-text-secondary no-underline border border-myst-border rounded shadow-sm group hover:border-myst-active hover:text-myst-active hover:shadow-lg myst-footer-link-next" aria-label="Next: Deployment" href="/PSD/deployment-guide"><div class="flex h-full align-middle"><div class="flex-grow"><div class="myst-footer-link-group text-xs text-myst-text-tertiary">UTS</div>Deployment</div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" width="1.5rem" height="1.5rem" class="myst-footer-link-icon self-center transition-transform group-hover:translate-x-1 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path></svg></div></a></div></article></main><script>((a,s)=>{if(!window.history.state||!window.history.state.key){let l=Math.random().toString(32).slice(2);window.history.replaceState({key:l},"")}try{let u=JSON.parse(sessionStorage.getItem(a)||"{}")[s||window.history.state.key];typeof u=="number"&&window.scrollTo(0,u)}catch(l){console.error(l),sessionStorage.removeItem(a)}})("positions", null)</script><script>window.__remixContext = {"url":"/code-uts","state":{"loaderData":{"root":{"config":{"version":3,"myst":"1.11.0","options":{"logo":"/PSD/build/farhan-cfb24e0dd3092906d31b375f7480c587.jpeg","logo_text":"Data Science Project"},"nav":[],"actions":[],"projects":[{"title":"Data Science Project","id":"63caf252-c220-4d92-b4bf-07665fb95b70","toc":[{"file":"intro","title":"Profile"},{"children":[{"file":"1/Sialkot_Air_Quality_Analysis.ipynb"},{"file":"2/index.md"},{"file":"3/Sawah_Classification_Sentinel2.ipynb"}],"title":"Materials"},{"children":[{"file":"uts/tugas-uts.md"},{"file":"uts/business-understanding-uts.md"},{"file":"uts/data-understanding-uts.md"},{"file":"uts/data-preparation-uts.md"},{"file":"uts/modeling-evaluation-uts.md"},{"file":"uts/code-uts.md"},{"file":"uts/deployment-guide.md"}],"title":"UTS"}],"exports":[],"bibliography":[],"index":"index","pages":[{"level":1,"title":"Materials"},{"slug":"sialkot-air-quality-analysis","title":"Observing Air Quality in Sialkot, Pakistan","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"index-1","title":"Air Quality Data Integration in Sialkot using Aiven PostgreSQL, pgAdmin, and KNIME","description":"","date":"","thumbnail":"/PSD/build/aiven-7f9c56690274ff5aabcc8116306228c6.png","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"sawah-classification-sentinel2","title":"Rice Field (Sawah) vs Non-Rice Field Classification: Sentinel-2A + Random Forest (scikit-eo)","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"level":1,"title":"UTS"},{"slug":"tugas-uts","title":"UTS Replacement Assignment: Land Cover Classification of East Java","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"business-understanding-uts","title":"Business Understanding","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"data-understanding-uts","title":"Data Understanding","description":"","date":"","thumbnail":"/PSD/build/uts_polygons-9cd9481cd52abb3a55bd0faffb4da592.png","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"data-preparation-uts","title":"Data Preparation","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"modeling-evaluation-uts","title":"Modeling and Evaluation","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"code-uts","title":"Code","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"deployment-guide","title":"Deployment","description":"","date":"","thumbnail":"/PSD/build/uts_map-1b4b4cb38fe8845b5e44e978a37b68a9.png","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2}]}]},"CONTENT_CDN_PORT":"3100","MODE":"static","BASE_URL":"/PSD"},"routes/$":{"config":{"version":3,"myst":"1.11.0","options":{"logo":"/PSD/build/farhan-cfb24e0dd3092906d31b375f7480c587.jpeg","logo_text":"Data Science Project"},"nav":[],"actions":[],"projects":[{"title":"Data Science Project","id":"63caf252-c220-4d92-b4bf-07665fb95b70","toc":[{"file":"intro","title":"Profile"},{"children":[{"file":"1/Sialkot_Air_Quality_Analysis.ipynb"},{"file":"2/index.md"},{"file":"3/Sawah_Classification_Sentinel2.ipynb"}],"title":"Materials"},{"children":[{"file":"uts/tugas-uts.md"},{"file":"uts/business-understanding-uts.md"},{"file":"uts/data-understanding-uts.md"},{"file":"uts/data-preparation-uts.md"},{"file":"uts/modeling-evaluation-uts.md"},{"file":"uts/code-uts.md"},{"file":"uts/deployment-guide.md"}],"title":"UTS"}],"exports":[],"bibliography":[],"index":"index","pages":[{"level":1,"title":"Materials"},{"slug":"sialkot-air-quality-analysis","title":"Observing Air Quality in Sialkot, Pakistan","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"index-1","title":"Air Quality Data Integration in Sialkot using Aiven PostgreSQL, pgAdmin, and KNIME","description":"","date":"","thumbnail":"/PSD/build/aiven-7f9c56690274ff5aabcc8116306228c6.png","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"sawah-classification-sentinel2","title":"Rice Field (Sawah) vs Non-Rice Field Classification: Sentinel-2A + Random Forest (scikit-eo)","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"level":1,"title":"UTS"},{"slug":"tugas-uts","title":"UTS Replacement Assignment: Land Cover Classification of East Java","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"business-understanding-uts","title":"Business Understanding","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"data-understanding-uts","title":"Data Understanding","description":"","date":"","thumbnail":"/PSD/build/uts_polygons-9cd9481cd52abb3a55bd0faffb4da592.png","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"data-preparation-uts","title":"Data Preparation","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"modeling-evaluation-uts","title":"Modeling and Evaluation","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"code-uts","title":"Code","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"deployment-guide","title":"Deployment","description":"","date":"","thumbnail":"/PSD/build/uts_map-1b4b4cb38fe8845b5e44e978a37b68a9.png","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2}]}]},"page":{"version":3,"kind":"Article","sha256":"f60c433453294afc57a62dc42a01808baec7cf1517c0ff35e56280bc369660fc","slug":"code-uts","location":"/uts/code-uts.md","dependencies":[],"frontmatter":{"title":"Code","content_includes_title":false,"numbering":{"title":{"offset":1}},"exports":[{"format":"md","filename":"code-uts.md","url":"/PSD/build/code-uts-f8ec0e0b8cd68ee2a09e587f76bdd0d1.md"}]},"mdast":{"type":"root","children":[{"type":"block","children":[{"type":"paragraph","position":{"start":{"line":3,"column":1},"end":{"line":3,"column":1}},"children":[{"type":"text","value":"All code lives in this folder and is shown below directly from the files. Run order: 1 to 4, then the app.","position":{"start":{"line":3,"column":1},"end":{"line":3,"column":1}},"key":"DfvR87Ow4b"}],"key":"ndKU3N4Lcp"},{"type":"heading","depth":2,"position":{"start":{"line":5,"column":1},"end":{"line":5,"column":1}},"children":[{"type":"text","value":"Settings: ","position":{"start":{"line":5,"column":1},"end":{"line":5,"column":1}},"key":"hv7A9SXvbZ"},{"type":"inlineCode","value":"config.py","position":{"start":{"line":5,"column":1},"end":{"line":5,"column":1}},"key":"Kv9LvDm14A"}],"identifier":"settings-config-py","label":"Settings: config.py","html_id":"settings-config-py","implicit":true,"key":"zIhwFldxf9"},{"type":"paragraph","position":{"start":{"line":7,"column":1},"end":{"line":7,"column":1}},"children":[{"type":"text","value":"All paths, class names, colours, dates, bands and model settings.","position":{"start":{"line":7,"column":1},"end":{"line":7,"column":1}},"key":"J1vFtjVzJy"}],"key":"FxztT6C0fJ"},{"type":"include","file":"config.py","literal":true,"children":[{"type":"code","value":"\"\"\"Central settings for the East Java LULC project. Edit values here only.\"\"\"\nfrom pathlib import Path\n\nROOT = Path(__file__).parent\nDATA = ROOT / \"data\"\n\n# ---- input files (put them in the data/ folder) ----------------------------\nSAMPLES_RAW = DATA / \"samples.geojson\"            # your digitized polygons (from geojson.io)\nBOUNDARY = DATA / \"east_java_boundary.geojson\"    # province boundary (from geoBoundaries)\n\n# ---- generated files --------------------------------------------------------\nSAMPLES_CLEAN = DATA / \"samples_clean.geojson\"    # step 1 output\nTEST_DIR = DATA / \"test\"                          # step 2 --test output\nTILES_DIR = DATA / \"tiles\"                        # step 2 output (Sentinel-2 composite tiles)\nPIXELS_CSV = DATA / \"training_pixels.csv\"         # step 3 output\nMODEL_PATH = DATA / \"model_rf.joblib\"             # step 3 output\nMETRICS_JSON = DATA / \"metrics.json\"              # step 3 output\nSIGNATURE_CSV = DATA / \"class_signature.csv\"      # step 3 output (mean B04/B8A/B11 per class)\nCLASS_TILES_DIR = DATA / \"class_tiles\"            # step 4 output (classified GeoTIFF tiles)\nGEOJSON_DIR = DATA / \"geojson\"                    # step 4 output (one GeoJSON per class)\nSTATS_JSON = DATA / \"class_stats.json\"            # step 4 output (area per class)\n\n# ---- classes ----------------------------------------------------------------\nCLASSES = [\"built_up\", \"farmland\", \"water\", \"forest\", \"mangrove\"]\nCLASS_ID = {name: i + 1 for i, name in enumerate(CLASSES)}       # 0 = no data\nCLASS_NAME_EN = {\n    \"built_up\": \"Built-up (Bangunan)\",\n    \"farmland\": \"Farmland (Lahan pertanian)\",\n    \"water\": \"Water body (Lautan, danau, perairan)\",\n    \"forest\": \"Forest (Hutan)\",\n    \"mangrove\": \"Mangrove forest (Hutan mangrove)\",\n}\nCLASS_COLOR = {\n    \"built_up\": \"#e31a1c\",\n    \"farmland\": \"#ffd92f\",\n    \"water\": \"#1f78b4\",\n    \"forest\": \"#1b7837\",\n    \"mangrove\": \"#7b3294\",\n}\n# Accepted spellings in your geojson -\u003e official class value.\n# Step 1 reads column \"kelas\" if it exists, otherwise column \"Type\".\nLABEL_MAP = {\n    \"built_up\": \"built_up\", \"built-up\": \"built_up\", \"bangunan\": \"built_up\", \"pemukiman\": \"built_up\",\n    \"farmland\": \"farmland\", \"sawah\": \"farmland\", \"pertanian\": \"farmland\",\n    \"water\": \"water\", \"air\": \"water\",\n    \"forest\": \"forest\", \"hutan\": \"forest\", \"hutan non mangrove\": \"forest\",\n    \"mangrove\": \"mangrove\", \"hutan mangrove\": \"mangrove\",\n}\n\n# ---- Sentinel-2 download (openEO / Copernicus Data Space) -------------------\nDATE_START = \"2025-01-01\"\nDATE_END = \"2026-01-01\"        # end date is exclusive -\u003e all of 2025\nMAX_CLOUD = 60                 # % scene cloud cover accepted before pixel-level masking\nBANDS = [\"B04\", \"B8A\", \"B11\"]  # lecturer's note: bands 8A-11-4 (order in the GeoTIFF)\nEPSG = 32749                   # UTM 49S, used for every tile so that tiles line up\nCRS = f\"EPSG:{EPSG}\"\nRESOLUTION = 20                # metres (B8A and B11 are natively 20 m)\nTILE_SIZE_M = 50_000           # 50 km x 50 km tiles = 2500 x 2500 pixels\n\n# Far offshore islands (Kangean, Masalembu, Bawean ...) would add many tiles that are\n# mostly sea. Set to False if you want them included.\nEXCLUDE_FAR_ISLANDS = True\nMAX_LON = 114.7\nMAX_LAT = -6.4\nBOUNDARY_BUFFER_M = 0          # \u003e0 adds a coastal sea strip around the province\n\n# ---- sampling and model -----------------------------------------------------\nMIN_POLYGON_AREA_M2 = 500    # polygons smaller than this are dropped (step 1)\nWARN_POLYGON_AREA_M2 = 5_000_000   # polygons larger than this are flagged (mixed land cover risk)\nMAX_PIXELS_PER_POLYGON = 300   # random cap so very large polygons do not dominate\nTEST_SIZE = 0.30               # share of POLYGONS (not pixels) kept for testing\nSEED = 42\nFEATURES = [\"B04\", \"B8A\", \"B11\", \"NDVI\", \"NDMI\"]\nRF_PARAMS = dict(n_estimators=300, class_weight=\"balanced\", n_jobs=-1, random_state=SEED)\n\n# ---- GeoJSON layers for the web map ------------------------------------------\nVECTOR_FACTOR = 3              # 3 -\u003e vectorize at 60 m (smaller files). 1 = full 20 m\nSIEVE_MIN_PIXELS = 10          # remove blobs smaller than this many (coarse) pixels\nMIN_AREA_HA = 3                # drop polygons smaller than this\nSIMPLIFY_M = 40                # geometry simplification tolerance in metres\n","lang":"python","filename":"config.py","key":"c1VD2n8PX2"}],"key":"lEl6KDNEy6"},{"type":"heading","depth":2,"position":{"start":{"line":12,"column":1},"end":{"line":12,"column":1}},"children":[{"type":"text","value":"Step 1: prepare samples (","position":{"start":{"line":12,"column":1},"end":{"line":12,"column":1}},"key":"vpPzpopBVe"},{"type":"inlineCode","value":"01_prepare_samples.py","position":{"start":{"line":12,"column":1},"end":{"line":12,"column":1}},"key":"waOoMJrL4G"},{"type":"text","value":")","position":{"start":{"line":12,"column":1},"end":{"line":12,"column":1}},"key":"N31YtgiMPe"}],"identifier":"step-1-prepare-samples-01-prepare-samples-py","label":"Step 1: prepare samples (01_prepare_samples.py)","html_id":"step-1-prepare-samples-01-prepare-samples-py","implicit":true,"key":"EChxBpFc0a"},{"type":"paragraph","position":{"start":{"line":14,"column":1},"end":{"line":14,"column":1}},"children":[{"type":"text","value":"Maps labels to the five class names, fixes invalid geometries, drops polygons that are too small.","position":{"start":{"line":14,"column":1},"end":{"line":14,"column":1}},"key":"EL0QoWaVx6"}],"key":"fPaHADnQzO"},{"type":"include","file":"01_prepare_samples.py","literal":true,"children":[{"type":"code","value":"\"\"\"Step 1 - check and clean your digitized polygons.\n\nReads data/samples.geojson, converts the label column to `kelas` with the five official\nvalues (built_up, farmland, water, forest, mangrove), drops polygons that are too small\nto contain pixels, and writes data/samples_clean.geojson.\n\"\"\"\nimport sys\n\nimport geopandas as gpd\n\nimport config as C\n\n\ndef main():\n    if not C.SAMPLES_RAW.exists():\n        sys.exit(f\"Put your polygon file at {C.SAMPLES_RAW}\")\n\n    gdf = gpd.read_file(C.SAMPLES_RAW)\n    print(f\"Read {len(gdf)} features, geometry types: {sorted(gdf.geom_type.unique())}\")\n    gdf = gdf[gdf.geom_type.isin([\"Polygon\", \"MultiPolygon\"])].copy()\n\n    label_col = \"kelas\" if \"kelas\" in gdf.columns else \"Type\" if \"Type\" in gdf.columns else None\n    if label_col is None:\n        sys.exit(f\"No 'kelas' or 'Type' column found. Columns: {list(gdf.columns)}\")\n    print(f\"Label column used: {label_col}\")\n\n    raw = gdf[label_col].astype(str).str.strip().str.lower()\n    unknown = sorted(set(raw) - set(C.LABEL_MAP))\n    if unknown:\n        sys.exit(f\"Unknown label values {unknown}. Add them to LABEL_MAP in config.py or fix the file.\")\n    gdf[\"kelas\"] = raw.map(C.LABEL_MAP)\n\n    gdf = gdf[gdf.geometry.notna() \u0026 ~gdf.geometry.is_empty].copy()\n    invalid = ~gdf.geometry.is_valid\n    if invalid.any():\n        print(f\"Fixing {int(invalid.sum())} invalid geometries\")\n        gdf.loc[invalid, \"geometry\"] = gdf.loc[invalid, \"geometry\"].buffer(0)\n\n    gdf[\"area_m2\"] = gdf.to_crs(C.CRS).geometry.area.round(0)\n    too_small = gdf[\"area_m2\"] \u003c C.MIN_POLYGON_AREA_M2\n    too_large = gdf[\"area_m2\"] \u003e C.WARN_POLYGON_AREA_M2\n    print(f\"Dropping {int(too_small.sum())} polygons smaller than {C.MIN_POLYGON_AREA_M2} m2\")\n    print(f\"WARNING: {int(too_large.sum())} polygons larger than {C.WARN_POLYGON_AREA_M2 / 1e6:.0f} km2 \"\n          f\"(kept, but they may cover mixed land cover - consider redrawing)\")\n    gdf = gdf[~too_small].copy()\n\n    gdf[\"class_id\"] = gdf[\"kelas\"].map(C.CLASS_ID)\n    gdf = gdf.sort_values(\"kelas\").reset_index(drop=True)\n    gdf[\"poly_id\"] = gdf.groupby(\"kelas\").cumcount().add(1).map(\"{:03d}\".format)\n    gdf[\"poly_id\"] = gdf[\"kelas\"] + \"_\" + gdf[\"poly_id\"]\n\n    out = gdf[[\"poly_id\", \"kelas\", \"class_id\", \"area_m2\", \"geometry\"]].to_crs(4326)\n    C.DATA.mkdir(exist_ok=True)\n    out.to_file(C.SAMPLES_CLEAN, driver=\"GeoJSON\")\n\n    print(\"\\nPolygons per class:\")\n    print(out.groupby(\"kelas\").agg(polygons=(\"poly_id\", \"count\"),\n                                   median_area_m2=(\"area_m2\", \"median\"),\n                                   max_area_m2=(\"area_m2\", \"max\")).reindex(C.CLASSES))\n    print(f\"\\nSaved {len(out)} polygons -\u003e {C.SAMPLES_CLEAN}\")\n\n\nif __name__ == \"__main__\":\n    main()\n","lang":"python","filename":"01_prepare_samples.py","key":"EkQ9KJhbwU"}],"key":"y0z2dyPlDH"},{"type":"heading","depth":2,"position":{"start":{"line":19,"column":1},"end":{"line":19,"column":1}},"children":[{"type":"text","value":"Step 2: download Sentinel-2 (","position":{"start":{"line":19,"column":1},"end":{"line":19,"column":1}},"key":"lbHE3pBjSF"},{"type":"inlineCode","value":"02_download_sentinel2.py","position":{"start":{"line":19,"column":1},"end":{"line":19,"column":1}},"key":"bhdzD2GrBW"},{"type":"text","value":")","position":{"start":{"line":19,"column":1},"end":{"line":19,"column":1}},"key":"Vqot7r9PdE"}],"identifier":"step-2-download-sentinel-2-02-download-sentinel2-py","label":"Step 2: download Sentinel-2 (02_download_sentinel2.py)","html_id":"step-2-download-sentinel-2-02-download-sentinel2-py","implicit":true,"key":"Dh5CMMqw8d"},{"type":"paragraph","position":{"start":{"line":21,"column":1},"end":{"line":21,"column":1}},"children":[{"type":"text","value":"Cloud-masked median composite of bands B04, B8A, B11 for 2025, downloaded tile by tile from Copernicus openEO.","position":{"start":{"line":21,"column":1},"end":{"line":21,"column":1}},"key":"ZwxiNmKuwr"}],"key":"WofLuZ2xTg"},{"type":"include","file":"02_download_sentinel2.py","literal":true,"children":[{"type":"code","value":"\"\"\"Step 2 - download a Sentinel-2 L2A composite (bands B04, B8A, B11) from Copernicus openEO.\n\n  python 02_download_sentinel2.py --test      small 10x10 km test around your first farmland polygon\n  python 02_download_sentinel2.py --dry-run   list the tiles that would be downloaded, then stop\n  python 02_download_sentinel2.py --samples-only   only tiles that contain your polygons (enough for training)\n  python 02_download_sentinel2.py             download all tiles (resumes: existing files are skipped)\n\nFor every tile the server: filters Sentinel-2 L2A for 2025, masks cloud / cloud shadow / cirrus /\nsnow with the SCL band, takes the per-pixel median over time, and returns a 3-band GeoTIFF\n(B04, B8A, B11) at 20 m in EPSG:32749.\nA browser window opens the first time so you can log in to your Copernicus account.\n\"\"\"\nimport argparse\nimport sys\nimport time\n\nimport geopandas as gpd\nimport openeo\nfrom shapely.geometry import box\n\nimport config as C\nfrom geo_utils import load_boundary_utm\nfrom lulc_utils import tile_grid\n\n\ndef build_cube(conn, west, south, east, north):\n    cube = conn.load_collection(\n        \"SENTINEL2_L2A\",\n        spatial_extent={\"west\": west, \"south\": south, \"east\": east, \"north\": north, \"crs\": C.CRS},\n        temporal_extent=[C.DATE_START, C.DATE_END],\n        bands=C.BANDS + [\"SCL\"],\n        max_cloud_cover=C.MAX_CLOUD,\n    )\n    scl = cube.band(\"SCL\")\n    # SCL classes: 3 cloud shadow, 8 cloud medium, 9 cloud high, 10 thin cirrus, 11 snow/ice\n    bad = (scl == 3) | (scl == 8) | (scl == 9) | (scl == 10) | (scl == 11)\n    cube = cube.filter_bands(C.BANDS).mask(bad)\n    cube = cube.reduce_dimension(dimension=\"t\", reducer=\"median\")\n    cube = cube.resample_spatial(resolution=C.RESOLUTION, projection=C.EPSG)\n    return cube\n\n\ndef run_job(conn, extent, out_path, title):\n    west, south, east, north = extent\n    cube = build_cube(conn, west, south, east, north)\n    job = cube.create_job(title=title, out_format=\"GTiff\")\n    job.start_and_wait()\n    out_path.parent.mkdir(parents=True, exist_ok=True)\n    job.get_results().download_file(out_path)\n\n\ndef test_extent():\n    gdf = gpd.read_file(C.SAMPLES_CLEAN).to_crs(C.CRS)\n    farm = gdf[gdf[\"kelas\"] == \"farmland\"]\n    if farm.empty:\n        sys.exit(\"No farmland polygon found in samples_clean.geojson (run step 1 first).\")\n    c = farm.iloc[0].geometry.centroid\n    half = 5000\n    snap = lambda v: round(v / C.RESOLUTION) * C.RESOLUTION\n    return snap(c.x - half), snap(c.y - half), snap(c.x + half), snap(c.y + half)\n\n\ndef all_tiles(samples_only=False):\n    boundary = load_boundary_utm()\n    minx, miny, maxx, maxy = boundary.bounds\n    polys = gpd.read_file(C.SAMPLES_CLEAN).to_crs(C.CRS) if samples_only else None\n    tiles = []\n    for name, x0, y0, x1, y1 in tile_grid(minx, miny, maxx, maxy, C.TILE_SIZE_M):\n        b = box(x0, y0, x1, y1)\n        if not b.intersects(boundary):\n            continue\n        if samples_only and not polys.intersects(b).any():\n            continue\n        tiles.append((name, (x0, y0, x1, y1)))\n    return tiles\n\n\ndef main():\n    ap = argparse.ArgumentParser()\n    ap.add_argument(\"--test\", action=\"store_true\")\n    ap.add_argument(\"--dry-run\", action=\"store_true\")\n    ap.add_argument(\"--samples-only\", action=\"store_true\",\n                    help=\"only tiles that contain sample polygons\")\n    args = ap.parse_args()\n\n    if args.test:\n        extent = test_extent()\n        print(\"Test extent (UTM 49S, metres):\", extent)\n        conn = openeo.connect(\"openeo.dataspace.copernicus.eu\").authenticate_oidc()\n        out = C.TEST_DIR / \"test_area.tif\"\n        t0 = time.time()\n        run_job(conn, extent, out, \"uts-test-area\")\n        print(f\"Saved {out} in {time.time() - t0:.0f} s. Now open it and check it has 3 bands.\")\n        print(\"Check your credit usage in the Copernicus dashboard before running the full download.\")\n        return\n\n    tiles = all_tiles(args.samples_only)\n    print(f\"{len(tiles)} tiles of {C.TILE_SIZE_M // 1000} km x {C.TILE_SIZE_M // 1000} km\")\n    if args.dry_run:\n        for name, ext in tiles:\n            print(\" \", name, ext)\n        return\n\n    conn = openeo.connect(\"openeo.dataspace.copernicus.eu\").authenticate_oidc()\n    failed = []\n    for i, (name, (x0, y0, x1, y1)) in enumerate(tiles, 1):\n        out = C.TILES_DIR / f\"{name}.tif\"\n        if out.exists():\n            print(f\"[{i}/{len(tiles)}] {name}: already downloaded, skipping\")\n            continue\n        print(f\"[{i}/{len(tiles)}] {name}: requesting ...\")\n        try:\n            t0 = time.time()\n            run_job(conn, (x0, y0, x1, y1), out, f\"uts-{name}\")\n            print(f\"    done in {time.time() - t0:.0f} s\")\n        except Exception as e:  # keep going; rerun the script to retry failed tiles\n            print(f\"    FAILED: {e}\")\n            failed.append(name)\n    if failed:\n        print(\"\\nFailed tiles (rerun this script to retry):\", failed)\n    else:\n        print(\"\\nAll tiles downloaded.\")\n\n\nif __name__ == \"__main__\":\n    main()","lang":"python","filename":"02_download_sentinel2.py","key":"deFxikc1jn"}],"key":"Bf4trvuKG8"},{"type":"heading","depth":2,"position":{"start":{"line":26,"column":1},"end":{"line":26,"column":1}},"children":[{"type":"text","value":"Step 3: extract pixels, train, evaluate (","position":{"start":{"line":26,"column":1},"end":{"line":26,"column":1}},"key":"PTqX5QD9Pv"},{"type":"inlineCode","value":"03_extract_and_train.py","position":{"start":{"line":26,"column":1},"end":{"line":26,"column":1}},"key":"TXAusT85l5"},{"type":"text","value":")","position":{"start":{"line":26,"column":1},"end":{"line":26,"column":1}},"key":"RFVs3jZ4Z3"}],"identifier":"step-3-extract-pixels-train-evaluate-03-extract-and-train-py","label":"Step 3: extract pixels, train, evaluate (03_extract_and_train.py)","html_id":"step-3-extract-pixels-train-evaluate-03-extract-and-train-py","implicit":true,"key":"ye5ibUVhrT"},{"type":"paragraph","position":{"start":{"line":28,"column":1},"end":{"line":28,"column":1}},"children":[{"type":"text","value":"Reads pixel values under the polygons, trains the Random Forest, evaluates on test polygons.","position":{"start":{"line":28,"column":1},"end":{"line":28,"column":1}},"key":"d9OsDfIhg6"}],"key":"yEbuTTa2kV"},{"type":"include","file":"03_extract_and_train.py","literal":true,"children":[{"type":"code","value":"\"\"\"Step 3 - read pixel values under your polygons, train the classifier, evaluate it.\n\nModel: Random Forest on B04, B8A, B11 (+ NDVI and NDMI computed from them).\nThe train/test split is made by POLYGON, so pixels of one polygon never appear in both sets.\n\"\"\"\nimport json\nimport sys\n\nimport geopandas as gpd\nimport joblib\nimport numpy as np\nimport pandas as pd\nimport rasterio\nfrom rasterio.mask import mask as rio_mask\nfrom shapely.geometry import box, mapping\nfrom sklearn.ensemble import RandomForestClassifier\n\nimport config as C\nfrom lulc_utils import evaluate, make_features, split_polygons, valid_pixels\n\n\ndef extract_pixels():\n    tiles = sorted(C.TILES_DIR.glob(\"*.tif\"))\n    if not tiles:\n        sys.exit(f\"No tiles in {C.TILES_DIR}. Run step 2 first.\")\n    polys = gpd.read_file(C.SAMPLES_CLEAN).to_crs(C.CRS)\n    rng = np.random.default_rng(C.SEED)\n    rows = []\n    for tif in tiles:\n        with rasterio.open(tif) as src:\n            if src.count \u003c 3:\n                sys.exit(f\"{tif.name} has {src.count} bands, expected 3 (B04, B8A, B11).\")\n            hit = polys[polys.intersects(box(*src.bounds))]\n            for _, p in hit.iterrows():\n                try:\n                    arr, _ = rio_mask(src, [mapping(p.geometry)], crop=True, filled=False)\n                except ValueError:      # polygon does not overlap this raster\n                    continue\n                bands = arr[:3].reshape(3, -1)\n                inside = ~np.ma.getmaskarray(bands).any(axis=0)\n                vals = np.ma.getdata(bands).astype(\"float32\")\n                if src.nodata is not None and not np.isnan(src.nodata):\n                    inside \u0026= ~np.any(vals == src.nodata, axis=0)\n                ok = inside \u0026 valid_pixels(vals)\n                idx = np.flatnonzero(ok)\n                if len(idx) == 0:\n                    continue\n                if len(idx) \u003e C.MAX_PIXELS_PER_POLYGON:\n                    idx = rng.choice(idx, C.MAX_PIXELS_PER_POLYGON, replace=False)\n                df = make_features(vals[0, idx], vals[1, idx], vals[2, idx])\n                df.insert(0, \"kelas\", p[\"kelas\"])\n                df.insert(0, \"poly_id\", p[\"poly_id\"])\n                rows.append(df)\n    if not rows:\n        sys.exit(\"No pixels extracted: polygons do not overlap the downloaded tiles.\")\n    return pd.concat(rows, ignore_index=True)\n\n\ndef main():\n    pix = extract_pixels()\n    pix.to_csv(C.PIXELS_CSV, index=False)\n    used = pix.groupby(\"kelas\")[\"poly_id\"].nunique().reindex(C.CLASSES).fillna(0).astype(int)\n    print(\"Polygons with usable pixels per class:\\n\", used.to_string())\n    print(\"Pixels per class:\\n\", pix[\"kelas\"].value_counts().reindex(C.CLASSES).fillna(0).astype(int).to_string())\n\n    poly_df = pix[[\"poly_id\", \"kelas\"]].drop_duplicates()\n    train_ids, test_ids = split_polygons(poly_df, C.TEST_SIZE, C.SEED)\n    tr = pix[pix[\"poly_id\"].isin(train_ids)]\n    te = pix[pix[\"poly_id\"].isin(test_ids)]\n    print(f\"\\nTrain: {len(train_ids)} polygons / {len(tr)} pixels   Test: {len(test_ids)} polygons / {len(te)} pixels\")\n\n    model = RandomForestClassifier(**C.RF_PARAMS)\n    model.fit(tr[C.FEATURES], tr[\"kelas\"])\n    pred = model.predict(te[C.FEATURES])\n\n    present = [c for c in C.CLASSES if c in set(te[\"kelas\"]) | set(pred)]\n    res = evaluate(te[\"kelas\"], pred, present)\n    res[\"n_polygons_train\"] = len(train_ids)\n    res[\"n_polygons_test\"] = len(test_ids)\n    res[\"n_pixels_train\"] = int(len(tr))\n    res[\"n_pixels_test\"] = int(len(te))\n    res[\"polygons_per_class\"] = {k: int(v) for k, v in used.items()}\n    res[\"pixels_per_class\"] = {k: int(v) for k, v in pix[\"kelas\"].value_counts().items()}\n    res[\"feature_importance\"] = dict(zip(C.FEATURES, map(float, model.feature_importances_)))\n    res[\"period\"] = f\"{C.DATE_START} to {C.DATE_END}\"\n\n    print(f\"\\nOverall accuracy: {res['accuracy']:.4f}   Cohen's kappa: {res['kappa']:.4f}\")\n    print(\"\\nPer-class F1 (lowest first - these classes need more / better polygons):\")\n    f1 = {c: res[\"per_class\"][c][\"f1-score\"] for c in present}\n    for c, v in sorted(f1.items(), key=lambda kv: kv[1]):\n        print(f\"  {c:10s} {v:.3f}\")\n    print(\"\\nConfusion matrix (rows = true, columns = predicted):\")\n    print(pd.DataFrame(res[\"confusion_matrix\"], index=present, columns=present).to_string())\n\n    sig = pix.groupby(\"kelas\")[[\"B04\", \"B8A\", \"B11\"]].mean().reindex(C.CLASSES).dropna()\n    sig.to_csv(C.SIGNATURE_CSV)\n    joblib.dump({\"model\": model, \"features\": C.FEATURES}, C.MODEL_PATH)\n    with open(C.METRICS_JSON, \"w\") as f:\n        json.dump(res, f, indent=2)\n    print(f\"\\nSaved {C.MODEL_PATH.name}, {C.METRICS_JSON.name}, {C.SIGNATURE_CSV.name}, {C.PIXELS_CSV.name} in data/\")\n\n\nif __name__ == \"__main__\":\n    main()\n","lang":"python","filename":"03_extract_and_train.py","key":"aDZwqcXE4o"}],"key":"i8Rdyurziw"},{"type":"heading","depth":2,"position":{"start":{"line":33,"column":1},"end":{"line":33,"column":1}},"children":[{"type":"text","value":"Step 4: predict and create GeoJSON layers (","position":{"start":{"line":33,"column":1},"end":{"line":33,"column":1}},"key":"nuCVmrtnDU"},{"type":"inlineCode","value":"04_predict_and_vectorize.py","position":{"start":{"line":33,"column":1},"end":{"line":33,"column":1}},"key":"eQdzuc5ZTg"},{"type":"text","value":")","position":{"start":{"line":33,"column":1},"end":{"line":33,"column":1}},"key":"zBXGuNJS0z"}],"identifier":"step-4-predict-and-create-geojson-layers-04-predict-and-vectorize-py","label":"Step 4: predict and create GeoJSON layers (04_predict_and_vectorize.py)","html_id":"step-4-predict-and-create-geojson-layers-04-predict-and-vectorize-py","implicit":true,"key":"sCKEPKplMa"},{"type":"paragraph","position":{"start":{"line":35,"column":1},"end":{"line":35,"column":1}},"children":[{"type":"text","value":"Classifies every tile and converts each class into a GeoJSON layer.","position":{"start":{"line":35,"column":1},"end":{"line":35,"column":1}},"key":"P4adcMzR4s"}],"key":"ZgEkCsrNeh"},{"type":"include","file":"04_predict_and_vectorize.py","literal":true,"children":[{"type":"code","value":"\"\"\"Step 4 - classify every tile, then digitize the result into one GeoJSON layer per class.\n\nFor each Sentinel-2 tile: predict a class map (GeoTIFF, 1-5, 0 = no data / outside East Java),\ncount the area per class, and convert each class to polygons (GeoJSON, EPSG:4326) for the web map.\nPolygons are generalized (coarser grid, small blobs removed, simplified) so the files stay small\nenough for Leaflet - see VECTOR_FACTOR, SIEVE_MIN_PIXELS, MIN_AREA_HA and SIMPLIFY_M in config.py.\n\"\"\"\nimport json\nimport sys\n\nimport geopandas as gpd\nimport joblib\nimport numpy as np\nimport rasterio\nfrom rasterio.features import geometry_mask, shapes, sieve\nfrom shapely.geometry import box, shape\n\nimport config as C\nfrom geo_utils import load_boundary_utm\nfrom lulc_utils import make_features, valid_pixels\n\n\ndef predict_tile(model, features, src, boundary):\n    data = src.read([1, 2, 3]).astype(\"float32\")             # (3, h, w)\n    h, w = data.shape[1:]\n    flat = data.reshape(3, -1)\n    ok = valid_pixels(flat)\n    inside = geometry_mask([boundary], out_shape=(h, w), transform=src.transform, invert=True).ravel()\n    ok \u0026= inside\n    out = np.zeros(h * w, dtype=\"uint8\")\n    idx = np.flatnonzero(ok)\n    for start in range(0, len(idx), 500_000):                # predict in chunks to save memory\n        sl = idx[start:start + 500_000]\n        X = make_features(flat[0, sl], flat[1, sl], flat[2, sl])[features]\n        out[sl] = [C.CLASS_ID[k] for k in model.predict(X)]\n    return out.reshape(h, w)\n\n\ndef class_polygons(class_map, transform, class_id):\n    \"\"\"Binary class layer -\u003e list of shapely polygons in the raster CRS (metres).\"\"\"\n    f = C.VECTOR_FACTOR\n    h, w = class_map.shape\n    hh, ww = h // f * f, w // f * f\n    binary = (class_map[:hh, :ww] == class_id).astype(\"uint8\")\n    if f \u003e 1:                                                # majority vote per f x f block\n        blocks = binary.reshape(hh // f, f, ww // f, f).sum(axis=(1, 3), dtype=\"uint8\")\n        binary = (blocks * 2 \u003e= f * f).astype(\"uint8\")\n    t = transform * transform.scale(f, f)\n    if not binary.any():\n        return []\n    binary = sieve(binary, size=C.SIEVE_MIN_PIXELS, connectivity=4)\n    polys = []\n    min_area = C.MIN_AREA_HA * 10_000\n    for geom, val in shapes(binary, mask=binary.astype(bool), transform=t, connectivity=4):\n        g = shape(geom)\n        if g.area \u003c min_area:\n            continue\n        polys.append(g.simplify(C.SIMPLIFY_M, preserve_topology=True))\n    return polys\n\n\ndef round_coords(obj, nd=5):\n    if isinstance(obj, (list, tuple)):\n        if obj and isinstance(obj[0], (int, float)):\n            return [round(v, nd) for v in obj]\n        return [round_coords(o, nd) for o in obj]\n    return obj\n\n\ndef main():\n    tiles = sorted(C.TILES_DIR.glob(\"*.tif\"))\n    if not tiles:\n        sys.exit(f\"No tiles in {C.TILES_DIR}. Run step 2 first.\")\n    bundle = joblib.load(C.MODEL_PATH)\n    model, features = bundle[\"model\"], bundle[\"features\"]\n    boundary = load_boundary_utm()\n\n    C.CLASS_TILES_DIR.mkdir(parents=True, exist_ok=True)\n    C.GEOJSON_DIR.mkdir(parents=True, exist_ok=True)\n    pixel_counts = {k: 0 for k in C.CLASSES}\n    layer_polys = {k: [] for k in C.CLASSES}\n    res = C.RESOLUTION\n\n    for i, tif in enumerate(tiles, 1):\n        print(f\"[{i}/{len(tiles)}] {tif.name}\")\n        with rasterio.open(tif) as src:\n            if not box(*src.bounds).intersects(boundary):\n                continue\n            cmap = predict_tile(model, features, src, boundary)\n            profile = src.profile.copy()\n            profile.update(count=1, dtype=\"uint8\", nodata=0, compress=\"lzw\")\n            with rasterio.open(C.CLASS_TILES_DIR / f\"{tif.stem}_class.tif\", \"w\", **profile) as dst:\n                dst.write(cmap, 1)\n            for k in C.CLASSES:\n                cid = C.CLASS_ID[k]\n                pixel_counts[k] += int((cmap == cid).sum())\n                layer_polys[k] += class_polygons(cmap, src.transform, cid)\n\n    total = sum(pixel_counts.values())\n    stats = {k: {\"pixels\": v,\n                 \"area_km2\": round(v * res * res / 1e6, 2),\n                 \"percent\": round(100 * v / total, 2) if total else 0.0}\n             for k, v in pixel_counts.items()}\n    with open(C.STATS_JSON, \"w\") as f:\n        json.dump({\"resolution_m\": res, \"classes\": stats}, f, indent=2)\n\n    for k in C.CLASSES:\n        gdf = gpd.GeoDataFrame({\"kelas\": k, \"area_ha\": [round(g.area / 1e4, 2) for g in layer_polys[k]]},\n                               geometry=layer_polys[k], crs=C.CRS).to_crs(4326)\n        gj = json.loads(gdf.to_json(drop_id=True))\n        for feat in gj[\"features\"]:\n            feat[\"geometry\"][\"coordinates\"] = round_coords(feat[\"geometry\"][\"coordinates\"])\n        path = C.GEOJSON_DIR / f\"{k}.geojson\"\n        with open(path, \"w\") as f:\n            json.dump(gj, f, separators=(\",\", \":\"))\n        print(f\"  {k:9s} {len(gdf):7d} polygons  {path.stat().st_size / 1e6:7.1f} MB\")\n    print(\"\\nArea per class:\")\n    for k, v in stats.items():\n        print(f\"  {k:9s} {v['area_km2']:10.1f} km2  {v['percent']:5.1f} %\")\n    print(f\"\\nSaved class tiles in {C.CLASS_TILES_DIR} and GeoJSON layers in {C.GEOJSON_DIR}\")\n\n\nif __name__ == \"__main__\":\n    main()\n","lang":"python","filename":"04_predict_and_vectorize.py","key":"Vr0iVRoS7D"}],"key":"zyuQorwIIf"},{"type":"heading","depth":2,"position":{"start":{"line":40,"column":1},"end":{"line":40,"column":1}},"children":[{"type":"text","value":"Helper modules","position":{"start":{"line":40,"column":1},"end":{"line":40,"column":1}},"key":"jixaw4oD7o"}],"identifier":"helper-modules","label":"Helper modules","html_id":"helper-modules","implicit":true,"key":"V0bBuY6FAX"},{"type":"include","file":"lulc_utils.py","literal":true,"children":[{"type":"code","value":"\"\"\"Helpers that need only numpy / pandas / scikit-learn (no GIS libraries).\"\"\"\nimport math\n\nimport numpy as np\nimport pandas as pd\n\nimport config as C\n\n\ndef make_features(b04, b8a, b11):\n    \"\"\"Build the model feature table from three 1-D arrays of reflectance values.\"\"\"\n    b04 = np.asarray(b04, dtype=\"float32\")\n    b8a = np.asarray(b8a, dtype=\"float32\")\n    b11 = np.asarray(b11, dtype=\"float32\")\n    eps = 1e-6\n    df = pd.DataFrame({\n        \"B04\": b04,\n        \"B8A\": b8a,\n        \"B11\": b11,\n        \"NDVI\": (b8a - b04) / (b8a + b04 + eps),   # vegetation\n        \"NDMI\": (b8a - b11) / (b8a + b11 + eps),   # moisture (NIR vs SWIR)\n    })\n    return df[C.FEATURES]\n\n\ndef valid_pixels(bands):\n    \"\"\"bands: array (3, n). True where the pixel holds usable values.\"\"\"\n    ok = np.all(np.isfinite(bands), axis=0)\n    ok \u0026= np.any(bands != 0, axis=0)\n    return ok\n\n\ndef split_polygons(poly_df, test_size, seed):\n    \"\"\"Stratified split by polygon. poly_df needs columns poly_id and kelas.\"\"\"\n    rng = np.random.default_rng(seed)\n    train, test = [], []\n    for _, g in poly_df.groupby(\"kelas\"):\n        ids = g[\"poly_id\"].to_numpy().copy()\n        rng.shuffle(ids)\n        n_test = max(1, int(round(len(ids) * test_size))) if len(ids) \u003e 1 else 0\n        test += list(ids[:n_test])\n        train += list(ids[n_test:])\n    return set(train), set(test)\n\n\ndef tile_grid(minx, miny, maxx, maxy, size):\n    \"\"\"Yield (name, x0, y0, x1, y1) for a grid aligned to multiples of `size`.\"\"\"\n    x_start = math.floor(minx / size) * size\n    y_start = math.floor(miny / size) * size\n    x = x_start\n    while x \u003c maxx:\n        y = y_start\n        while y \u003c maxy:\n            yield f\"tile_{int(x // 1000)}_{int(y // 1000)}\", x, y, x + size, y + size\n            y += size\n        x += size\n\n\ndef evaluate(y_true, y_pred, labels):\n    from sklearn.metrics import (accuracy_score, classification_report,\n                                 cohen_kappa_score, confusion_matrix)\n    return {\n        \"accuracy\": float(accuracy_score(y_true, y_pred)),\n        \"kappa\": float(cohen_kappa_score(y_true, y_pred)),\n        \"labels\": list(labels),\n        \"confusion_matrix\": confusion_matrix(y_true, y_pred, labels=labels).tolist(),\n        \"per_class\": classification_report(y_true, y_pred, labels=labels,\n                                           output_dict=True, zero_division=0),\n    }\n","lang":"python","filename":"lulc_utils.py","key":"oYdPkRUy6z"}],"key":"JN9fHgxjC0"},{"type":"include","file":"geo_utils.py","literal":true,"children":[{"type":"code","value":"\"\"\"Helpers that need geopandas / shapely.\"\"\"\nimport geopandas as gpd\nfrom shapely.ops import unary_union\n\nimport config as C\n\n\ndef load_boundary_utm():\n    \"\"\"East Java boundary in EPSG:32749 as one shapely geometry (far islands removed if configured).\"\"\"\n    gdf = gpd.read_file(C.BOUNDARY)\n    geom = unary_union(list(gdf.to_crs(C.CRS).geometry))\n    parts = list(geom.geoms) if geom.geom_type == \"MultiPolygon\" else [geom]\n    if C.EXCLUDE_FAR_ISLANDS:\n        kept = []\n        for p in parts:\n            c = gpd.GeoSeries([p], crs=C.CRS).to_crs(4326).iloc[0].centroid\n            if c.x \u003e C.MAX_LON or c.y \u003e C.MAX_LAT:\n                continue\n            kept.append(p)\n        parts = kept\n    geom = unary_union(parts)\n    if C.BOUNDARY_BUFFER_M:\n        geom = geom.buffer(C.BOUNDARY_BUFFER_M)\n    return geom\n","lang":"python","filename":"geo_utils.py","key":"YOGj7oRmeU"}],"key":"xOCEhaNxS8"},{"type":"heading","depth":2,"position":{"start":{"line":48,"column":1},"end":{"line":48,"column":1}},"children":[{"type":"text","value":"Streamlit app: ","position":{"start":{"line":48,"column":1},"end":{"line":48,"column":1}},"key":"VFMmRyJ9Hw"},{"type":"inlineCode","value":"app.py","position":{"start":{"line":48,"column":1},"end":{"line":48,"column":1}},"key":"w5BmntHANh"}],"identifier":"streamlit-app-app-py","label":"Streamlit app: app.py","html_id":"streamlit-app-app-py","implicit":true,"key":"zlBnYxuvD4"},{"type":"paragraph","position":{"start":{"line":50,"column":1},"end":{"line":50,"column":1}},"children":[{"type":"text","value":"Business Understanding, workflow, Leaflet map with one checkbox per class, and information about areas and accuracy.","position":{"start":{"line":50,"column":1},"end":{"line":50,"column":1}},"key":"Fy9Ja2zIO1"}],"key":"gLNbwjHhJB"},{"type":"include","file":"app.py","literal":true,"children":[{"type":"code","value":"\"\"\"Streamlit app: land cover of East Java (Sentinel-2 + Random Forest), Leaflet map with class filter.\"\"\"\nimport json\n\nimport folium\nimport pandas as pd\nimport streamlit as st\nfrom streamlit_folium import st_folium\n\nimport config as C\n\nESRI = \"https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}\"\nESRI_ATTR = \"Tiles \u0026copy; Esri \u0026mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community\"\n\nst.set_page_config(page_title=\"East Java Land Cover\", layout=\"wide\")\n\n\n@st.cache_data\ndef load_json(path):\n    p = C.ROOT / path\n    return json.loads(p.read_text(encoding=\"utf-8\")) if p.exists() else None\n\n\ndef load_layer(k):\n    return load_json(f\"data/geojson/{k}.geojson\")\n\n\nst.title(\"Land cover map of East Java from Sentinel-2 imagery\")\ntab_bu, tab_flow, tab_map, tab_info = st.tabs(\n    [\"Business Understanding\", \"Workflow\", \"Map\", \"Information\"])\n\n# ------------------------------------------------------------------ Business understanding\nwith tab_bu:\n    bu = C.ROOT / \"business_understanding.md\"\n    st.markdown(bu.read_text(encoding=\"utf-8\") if bu.exists() else \"business_understanding.md not found\")\n\n# ------------------------------------------------------------------ Workflow\nwith tab_flow:\n    metrics = load_json(\"data/metrics.json\")\n    period = metrics[\"period\"] if metrics else f\"{C.DATE_START} to {C.DATE_END}\"\n    st.markdown(f\"\"\"\n**Take input \u0026rarr; Process \u0026rarr; Classify \u0026rarr; Get information**\n\n1. **Input**\n   - Sentinel-2 L2A satellite imagery from Copernicus Data Space (openEO), period {period}.\n   - Sample polygons digitized by hand in geojson.io for five classes: built-up, farmland, water body, forest, mangrove forest.\n2. **Process**\n   - Clouds, cloud shadow, cirrus and snow are masked with the SCL band, then a median composite is made.\n   - Bands **8A, 11 and 4** (NIR, SWIR, red) are used; NDVI and NDMI are computed from the same bands.\n   - Pixel values under each sample polygon become the training data.\n3. **Classify**\n   - A Random Forest is trained on 70 % of the polygons and tested on the other 30 %.\n   - The trained model classifies every pixel of East Java, and the result is converted to one GeoJSON layer per class.\n4. **Get information**\n   - *Map* tab: class layers on top of the satellite basemap, with a checkbox per class.\n   - *Information* tab: area of each class and the model's accuracy.\n\"\"\")\n\n# ------------------------------------------------------------------ Map\nwith tab_map:\n    left, right = st.columns([1, 4])\n    with left:\n        st.subheader(\"Classes\")\n\n        def set_all(value):\n            for k in C.CLASSES:\n                st.session_state[f\"show_{k}\"] = value\n\n        b1, b2 = st.columns(2)\n        b1.button(\"Show all\", on_click=set_all, args=(True,), use_container_width=True)\n        b2.button(\"Hide all\", on_click=set_all, args=(False,), use_container_width=True)\n        selected = []\n        for k in C.CLASSES:\n            if st.checkbox(C.CLASS_NAME_EN[k], value=True, key=f\"show_{k}\"):\n                selected.append(k)\n            st.markdown(\n                f\"\u003cdiv style='height:6px;width:100%;background:{C.CLASS_COLOR[k]};\"\n                f\"margin:-10px 0 8px 0;border-radius:3px'\u003e\u003c/div\u003e\", unsafe_allow_html=True)\n        opacity = st.slider(\"Layer opacity\", 0.1, 1.0, 0.6, 0.05)\n        st.caption(\"Only the ticked classes are drawn on the map.\")\n\n    with right:\n        m = folium.Map(location=[-7.75, 112.6], zoom_start=8, tiles=None, control_scale=True)\n        folium.TileLayer(tiles=ESRI, attr=ESRI_ATTR, name=\"Satellite (Esri World Imagery)\").add_to(m)\n        missing = []\n        for k in selected:\n            data = load_layer(k)\n            if data is None:\n                missing.append(k)\n                continue\n            color = C.CLASS_COLOR[k]\n            folium.GeoJson(\n                data,\n                name=C.CLASS_NAME_EN[k],\n                style_function=lambda _f, col=color, op=opacity: {\n                    \"fillColor\": col, \"color\": col, \"weight\": 0.3, \"fillOpacity\": op},\n            ).add_to(m)\n        if missing:\n            st.warning(f\"No GeoJSON yet for: {', '.join(missing)}. Run 04_predict_and_vectorize.py first.\")\n        st_folium(m, height=680, use_container_width=True, returned_objects=[])\n\n# ------------------------------------------------------------------ Information\nwith tab_info:\n    stats = load_json(\"data/class_stats.json\")\n    metrics = load_json(\"data/metrics.json\")\n    if stats is None or metrics is None:\n        st.info(\"Run steps 3 and 4 to fill this page.\")\n    else:\n        st.subheader(\"Area per class\")\n        df = pd.DataFrame(stats[\"classes\"]).T\n        df.index = [C.CLASS_NAME_EN[k] for k in df.index]\n        st.dataframe(df[[\"area_km2\", \"percent\"]].rename(\n            columns={\"area_km2\": \"Area (km2)\", \"percent\": \"Share (%)\"}), use_container_width=True)\n        st.bar_chart(df[\"area_km2\"])\n        st.caption(f\"Counted from the classified raster at {stats['resolution_m']} m resolution, \"\n                   \"inside the East Java boundary used for the download.\")\n\n        st.subheader(\"Model accuracy (test polygons not used for training)\")\n        c1, c2, c3 = st.columns(3)\n        c1.metric(\"Overall accuracy\", f\"{metrics['accuracy'] * 100:.1f} %\")\n        c2.metric(\"Cohen's kappa\", f\"{metrics['kappa']:.3f}\")\n        c3.metric(\"Test pixels\", f\"{metrics['n_pixels_test']:,}\")\n        labels = metrics[\"labels\"]\n        per = pd.DataFrame({k: metrics[\"per_class\"][k] for k in labels}).T[\n            [\"precision\", \"recall\", \"f1-score\", \"support\"]].round(3)\n        st.dataframe(per, use_container_width=True)\n        st.markdown(\"**Confusion matrix** (rows = true class, columns = predicted class)\")\n        st.dataframe(pd.DataFrame(metrics[\"confusion_matrix\"], index=labels, columns=labels),\n                     use_container_width=True)\n        st.markdown(f\"Training data: {metrics['polygons_per_class']} polygons per class; \"\n                    f\"{metrics['n_pixels_train']:,} training pixels.\")\n\n        sig_path = C.ROOT / \"data\" / \"class_signature.csv\"\n        if sig_path.exists():\n            st.subheader(\"Mean reflectance of the training pixels (bands 8A, 11, 4)\")\n            sig = pd.read_csv(sig_path, index_col=0)[[\"B8A\", \"B11\", \"B04\"]]\n            st.line_chart(sig.T)\n            st.caption(\"Each line is one class. Bands are in the order 8A, 11, 4 as in the assignment.\")\n","lang":"python","filename":"app.py","key":"CT4SJeMpC1"}],"key":"rZlmnbHfVt"}],"key":"hcJfuucAko"}],"key":"QUfJXXbL7b"},"references":{"cite":{"order":[],"data":{}}},"footer":{"navigation":{"prev":{"title":"Modeling and Evaluation","url":"/modeling-evaluation-uts","group":"UTS"},"next":{"title":"Deployment","url":"/deployment-guide","group":"UTS"}}},"domain":"http://localhost:3000"},"project":{"title":"Data Science Project","id":"63caf252-c220-4d92-b4bf-07665fb95b70","toc":[{"file":"intro","title":"Profile"},{"children":[{"file":"1/Sialkot_Air_Quality_Analysis.ipynb"},{"file":"2/index.md"},{"file":"3/Sawah_Classification_Sentinel2.ipynb"}],"title":"Materials"},{"children":[{"file":"uts/tugas-uts.md"},{"file":"uts/business-understanding-uts.md"},{"file":"uts/data-understanding-uts.md"},{"file":"uts/data-preparation-uts.md"},{"file":"uts/modeling-evaluation-uts.md"},{"file":"uts/code-uts.md"},{"file":"uts/deployment-guide.md"}],"title":"UTS"}],"exports":[],"bibliography":[],"index":"index","pages":[{"level":1,"title":"Materials"},{"slug":"sialkot-air-quality-analysis","title":"Observing Air Quality in Sialkot, Pakistan","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"index-1","title":"Air Quality Data Integration in Sialkot using Aiven PostgreSQL, pgAdmin, and KNIME","description":"","date":"","thumbnail":"/PSD/build/aiven-7f9c56690274ff5aabcc8116306228c6.png","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"sawah-classification-sentinel2","title":"Rice Field (Sawah) vs Non-Rice Field Classification: Sentinel-2A + Random Forest (scikit-eo)","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"level":1,"title":"UTS"},{"slug":"tugas-uts","title":"UTS Replacement Assignment: Land Cover Classification of East Java","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"business-understanding-uts","title":"Business Understanding","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"data-understanding-uts","title":"Data Understanding","description":"","date":"","thumbnail":"/PSD/build/uts_polygons-9cd9481cd52abb3a55bd0faffb4da592.png","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"data-preparation-uts","title":"Data Preparation","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"modeling-evaluation-uts","title":"Modeling and Evaluation","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"code-uts","title":"Code","description":"","date":"","thumbnail":"","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2},{"slug":"deployment-guide","title":"Deployment","description":"","date":"","thumbnail":"/PSD/build/uts_map-1b4b4cb38fe8845b5e44e978a37b68a9.png","thumbnailOptimized":"","banner":"","bannerOptimized":"","tags":[],"level":2}]}}},"actionData":null,"errors":null},"future":{"unstable_dev":false,"unstable_postcss":false,"unstable_tailwind":false,"v2_errorBoundary":true,"v2_headers":true,"v2_meta":true,"v2_normalizeFormMethod":true,"v2_routeConvention":true}};</script><script type="module" async="">import "/PSD/build/manifest-0F78CC2B.js";
+import * as route0 from "/PSD/build/root-C5CK33H3.js";
+import * as route1 from "/PSD/build/routes/$-6ALOT4PW.js";
+window.__remixRouteModules = {"root":route0,"routes/$":route1};
+
+import("/PSD/build/entry.client-NNNALS5X.js");</script></body></html>
